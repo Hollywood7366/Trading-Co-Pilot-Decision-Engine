@@ -1,0 +1,5996 @@
+{
+  "version": "1",
+  "generated_utc": "2026-01-27T17:58:39.381039+00:00",
+  "tags": {
+    "abc_correction": {
+      "canonical_id": "abc_correction",
+      "description": "Three-leg corrective move (A-B-C) against the prior trend, often forming a pullback before trend resumption or reversal.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "a_b_c_correction",
+        "abc_pullback",
+        "three_leg_correction"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "always_in": {
+      "canonical_id": "always_in",
+      "description": "Always In concept (direction-neutral; use always_in_long/always_in_short when specified).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "always in",
+        "always-in"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "always in"
+      ],
+      "status": "active"
+    },
+    "always_in_long": {
+      "canonical_id": "always_in_long",
+      "description": "Market condition where longs are favored continuously",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "ail",
+        "always in long",
+        "always_long",
+        "bull_always_in"
+      ],
+      "abbreviations": [
+        "AIL"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "always in long"
+      ],
+      "status": "active"
+    },
+    "always_in_short": {
+      "canonical_id": "always_in_short",
+      "description": "Market condition where shorts are favored continuously",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "ais",
+        "always in short",
+        "always_short",
+        "bear_always_in"
+      ],
+      "abbreviations": [
+        "AIS"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "always in short"
+      ],
+      "status": "active"
+    },
+    "backtest_overfitting": {
+      "canonical_id": "backtest_overfitting",
+      "description": "Risk that backtest results are inflated due to curve-fitting to historical noise and non-robust parameter choices.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "curve_fitting",
+        "data_mining_bias",
+        "overfitting"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bar_by_bar_reading": {
+      "canonical_id": "bar_by_bar_reading",
+      "description": "Interpreting price action one bar at a time to infer context, strength, and likely next move.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bar_by_bar_analysis",
+        "bar_by_bar_analysis"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bar_counting": {
+      "canonical_id": "bar_counting",
+      "description": "Technique of counting bars since a signal, breakout, or swing point to time entries/exits and assess pattern maturity.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bar_count",
+        "bars_since",
+        "counting_bars"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bar_type_bear": {
+      "canonical_id": "bar_type_bear",
+      "description": "Bearish bar (close < open)",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bear_bar",
+        "red_bar"
+      ],
+      "abbreviations": [
+        "BTBE"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bar_type_bull": {
+      "canonical_id": "bar_type_bull",
+      "description": "Bullish bar (close > open)",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bull_bar",
+        "green_bar"
+      ],
+      "abbreviations": [
+        "BTB"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bar_type_doji": {
+      "canonical_id": "bar_type_doji",
+      "description": "Doji bar (close ≈ open)",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "btd",
+        "doji",
+        "doji_bar"
+      ],
+      "abbreviations": [
+        "BTD"
+      ],
+      "aliases": [
+        "doji"
+      ],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "barb_wire": {
+      "canonical_id": "barb_wire",
+      "description": "Tight overlapping bars with dojis, difficult to trade",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_range",
+      "synonyms": [
+        "barbwire",
+        "chop",
+        "choppy",
+        "overlapping_bars"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "barbwire"
+      ],
+      "status": "active"
+    },
+    "bear_breakout": {
+      "canonical_id": "bear_breakout",
+      "description": "Bear breakout (breakout down / breakdown).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "bear breakout",
+        "breakdown",
+        "breakout down"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bear_channel": {
+      "canonical_id": "bear_channel",
+      "description": "Bear channel (down-sloping channel) context.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "bear channel",
+        "bearish channel",
+        "down channel"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bear_flag": {
+      "canonical_id": "bear_flag",
+      "description": "Bear flag concept (bearish pause/pullback pattern).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "bear flag"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "bear flag"
+      ],
+      "status": "active"
+    },
+    "bear_flag_around_moving_average_trap": {
+      "canonical_id": "bear_flag_around_moving_average_trap",
+      "description": "Bear flag forming around a moving average that traps bears before reversing up.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "bear_flag_ma_trap",
+        "bear_ma_trap"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bear_ledge": {
+      "canonical_id": "bear_ledge",
+      "description": "Bearish ledge pattern: tight sideways-to-down consolidation with repeated highs at/near the same price acting as resistance before a breakout down.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "bearish_ledge",
+        "ledge_top"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bear_leg": {
+      "canonical_id": "bear_leg",
+      "description": "Bear leg of a move",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bear_micro_channel": {
+      "canonical_id": "bear_micro_channel",
+      "description": "Micro channel in bear direction",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bear_reversal": {
+      "canonical_id": "bear_reversal",
+      "description": "Bearish reversal concept (reversal down / selling reversal).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "bear reversal",
+        "revd",
+        "reversal down"
+      ],
+      "abbreviations": [
+        "REVD"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "bear reversal",
+        "reversal down"
+      ],
+      "status": "active"
+    },
+    "bear_reversal_bar": {
+      "canonical_id": "bear_reversal_bar",
+      "description": "Bear reversal bar",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bear_signal_bar": {
+      "canonical_id": "bear_signal_bar",
+      "description": "Bear signal bar",
+      "category": "signal",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "deprecated"
+    },
+    "bear_surprise_bar": {
+      "canonical_id": "bear_surprise_bar",
+      "description": "Bear surprise bar (directional surprise bar down).",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "bear surprise bar",
+        "bear_surprise",
+        "surprise bear bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bear_trend": {
+      "canonical_id": "bear_trend",
+      "description": "Bear trend (downtrend) context.",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "bear trend",
+        "bearish trend",
+        "downtrend"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bear_trend_bar": {
+      "canonical_id": "bear_trend_bar",
+      "description": "Strong bear trend bar",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bear_trend_from_the_open": {
+      "canonical_id": "bear_trend_from_the_open",
+      "description": "Bear trend starting from market open",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "big_trend_bar": {
+      "canonical_id": "big_trend_bar",
+      "description": "Large directional bar showing conviction",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "marubozu",
+        "momentum_bar",
+        "strong_bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "body_gap": {
+      "canonical_id": "body_gap",
+      "description": "Gap between candle bodies",
+      "category": "bar_classification",
+      "tier": "medium_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "body_size_large": {
+      "canonical_id": "body_size_large",
+      "description": "Large bar body relative to recent bars",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "large_body"
+      ],
+      "abbreviations": [
+        "BSL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "body_size_medium": {
+      "canonical_id": "body_size_medium",
+      "description": "Medium bar body relative to recent bars",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "medium_body"
+      ],
+      "abbreviations": [
+        "BSM"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "body_size_small": {
+      "canonical_id": "body_size_small",
+      "description": "Small bar body relative to recent bars",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "small_body"
+      ],
+      "abbreviations": [
+        "BSS"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bracket_oco_orders": {
+      "canonical_id": "bracket_oco_orders",
+      "description": "Bracket order management using OCO (one-cancels-other) entries/exits (e.g., stop + target).",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "bracket_order",
+        "oco_bracket",
+        "one_cancels_other"
+      ],
+      "abbreviations": [
+        "OCO"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "breakaway_gap": {
+      "canonical_id": "breakaway_gap",
+      "description": "A gap that breaks price out of a consolidation or pattern, often starting a new trend and tending not to fill quickly.",
+      "category": "gap",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "breakout_gap"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "breakout": {
+      "canonical_id": "breakout",
+      "description": "Price breaks above resistance or below support, often initiating a new leg or trend.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "breakout",
+        "range_breakout",
+        "range_expansion",
+        "support_resistance_break"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "breakout"
+      ],
+      "status": "active"
+    },
+    "breakout_bar": {
+      "canonical_id": "breakout_bar",
+      "description": "Bar that breaks above/below the high/low of prior N bars, initiating potential new move. Strength measured by number of prior bars exceeded.",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "bo_bar",
+        "range_breakout"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "breakout_mode": {
+      "canonical_id": "breakout_mode",
+      "description": "Trading range state where price is coiling and likely to break out up or down (breakout mode).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "transitional",
+      "synonyms": [
+        "breakout mode",
+        "breakout_mode_range",
+        "breakout_mode_setup",
+        "coiled_range"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "breakout mode"
+      ],
+      "status": "active"
+    },
+    "breakout_pullback": {
+      "canonical_id": "breakout_pullback",
+      "description": "First pullback after successful breakout",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "bo_pullback",
+        "bp",
+        "breakout pullback",
+        "first_pullback_after_bo"
+      ],
+      "abbreviations": [
+        "BP"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "breakout pullback"
+      ],
+      "status": "active"
+    },
+    "breakout_test": {
+      "canonical_id": "breakout_test",
+      "description": "Test of a breakout point",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "broad_bear_channel": {
+      "canonical_id": "broad_bear_channel",
+      "description": "Wide/broad bear channel",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "broad_bull_channel": {
+      "canonical_id": "broad_bull_channel",
+      "description": "Wide/broad bull channel",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_breakout": {
+      "canonical_id": "bull_breakout",
+      "description": "Bull breakout (breakout up).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "breakout up",
+        "bull breakout"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_channel": {
+      "canonical_id": "bull_channel",
+      "description": "Bull channel (up-sloping channel) context.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "bull channel",
+        "bullish channel",
+        "up channel"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_flag": {
+      "canonical_id": "bull_flag",
+      "description": "Bull flag concept (bullish pause/pullback pattern).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "bull flag"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "bull flag"
+      ],
+      "status": "active"
+    },
+    "bull_flag_around_moving_average_trap": {
+      "canonical_id": "bull_flag_around_moving_average_trap",
+      "description": "Bull flag forming around a moving average where a pullback/MA test traps shorts before resuming uptrend.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "bull_flag_ma_trap",
+        "ma_bull_flag_trap",
+        "moving_average_bull_flag_trap"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_ledge": {
+      "canonical_id": "bull_ledge",
+      "description": "Bullish ledge pattern: tight sideways-to-up consolidation with repeated lows at/near the same price acting as support before a breakout up.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "bullish_ledge",
+        "ledge_bottom"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_leg": {
+      "canonical_id": "bull_leg",
+      "description": "Bull leg of a move",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_micro_channel": {
+      "canonical_id": "bull_micro_channel",
+      "description": "Micro channel in bull direction",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_reversal": {
+      "canonical_id": "bull_reversal",
+      "description": "Bullish reversal concept (reversal up / buying reversal).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "bull reversal"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "bull reversal"
+      ],
+      "status": "active"
+    },
+    "bull_reversal_bar": {
+      "canonical_id": "bull_reversal_bar",
+      "description": "Bull reversal bar",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_signal_bar": {
+      "canonical_id": "bull_signal_bar",
+      "description": "Bull signal bar",
+      "category": "signal",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "deprecated"
+    },
+    "bull_surprise_bar": {
+      "canonical_id": "bull_surprise_bar",
+      "description": "Bull surprise bar (directional surprise bar up).",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "bull surprise bar",
+        "bull_surprise",
+        "surprise bull bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_trend": {
+      "canonical_id": "bull_trend",
+      "description": "Bull trend (uptrend) context.",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "bull trend",
+        "bullish trend",
+        "uptrend"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_trend_bar": {
+      "canonical_id": "bull_trend_bar",
+      "description": "Strong bull trend bar",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "bull_trend_from_the_open": {
+      "canonical_id": "bull_trend_from_the_open",
+      "description": "Bull trend starting from market open",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "buy_climax": {
+      "canonical_id": "buy_climax",
+      "description": "Late bull trend climactic behavior, potential top",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "bull_climax",
+        "climactic_buying",
+        "exhaustion_top"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "buy_signal_bar": {
+      "canonical_id": "buy_signal_bar",
+      "description": "Buy signal bar (bar that triggers a buy entry).",
+      "category": "signal",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "bsb",
+        "bull_signal_bar",
+        "buy signal bar"
+      ],
+      "abbreviations": [
+        "BSB"
+      ],
+      "aliases": [
+        "bull_signal_bar"
+      ],
+      "glossary_terms": [
+        "buy signal bar"
+      ],
+      "status": "active"
+    },
+    "buy_stop_entry": {
+      "canonical_id": "buy_stop_entry",
+      "description": "Buy stop entry order",
+      "category": "trade_management",
+      "tier": "medium_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "buy_the_close": {
+      "canonical_id": "buy_the_close",
+      "description": "Buy The Close (BTC) market state / tactic.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "btc",
+        "buy the close",
+        "buy_the_close"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "buy_vacuum": {
+      "canonical_id": "buy_vacuum",
+      "description": "Rapid price rise driven by urgent buying and lack of sell liquidity, often into resistance and prone to stalling/reversal.",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "buying_vacuum",
+        "vacuum_rally",
+        "vacuum_up"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "buying_pressure": {
+      "canonical_id": "buying_pressure",
+      "description": "Persistent net buying that supports higher prices (often seen as strong bull closes, repeated higher lows, or inability to sustain selloffs).",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bid_dominance",
+        "bull_pressure",
+        "buying pressure",
+        "demand_pressure"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "buying pressure"
+      ],
+      "status": "active"
+    },
+    "channel": {
+      "canonical_id": "channel",
+      "description": "Channel concept (sloping range with roughly parallel trendlines).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_range",
+      "synonyms": [
+        "broad_channel",
+        "channel",
+        "trend_channel"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "channel"
+      ],
+      "status": "active"
+    },
+    "channel_as_flag": {
+      "canonical_id": "channel_as_flag",
+      "description": "A tight channel that functions as a flag (pullback) within a larger trend, typically leading to trend resumption breakout.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "channel_flag",
+        "flag_channel",
+        "tight_channel_flag"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "cherry_picking_risk": {
+      "canonical_id": "cherry_picking_risk",
+      "description": "Bias from selecting only favorable examples/trades, leading to overstated performance or edge.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "backtest_cherry_picking",
+        "selection_bias",
+        "survivorship_bias"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "climactic_selloff": {
+      "canonical_id": "climactic_selloff",
+      "description": "Climactic selling exhaustion",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "climax": {
+      "canonical_id": "climax",
+      "description": "Climax concept (climactic move / exhaustion).",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "climactic_reversal",
+        "climax",
+        "exhaustion_climax"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "climax"
+      ],
+      "status": "active"
+    },
+    "commission_drag": {
+      "canonical_id": "commission_drag",
+      "description": "Performance degradation from commissions/fees (and related frictions) reducing net expectancy, especially for high-frequency trading.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "commission_impact",
+        "fees_drag",
+        "transaction_cost_drag"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "consecutive_bear_bars": {
+      "canonical_id": "consecutive_bear_bars",
+      "description": "Multiple consecutive bear bars",
+      "category": "bar_classification",
+      "tier": "medium_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "consecutive_bull_bars": {
+      "canonical_id": "consecutive_bull_bars",
+      "description": "Multiple consecutive bull bars",
+      "category": "bar_classification",
+      "tier": "medium_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "consecutive_trend_bars": {
+      "canonical_id": "consecutive_trend_bars",
+      "description": "Multiple consecutive bars in same direction",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "consecutive_bars",
+        "series_trend_bars"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "continuation": {
+      "canonical_id": "continuation",
+      "description": "Trend continuation signal",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "countertrend_trading": {
+      "canonical_id": "countertrend_trading",
+      "description": "Trading against the prevailing trend, typically targeting pullbacks or reversals.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "countertrend",
+        "fade_the_trend",
+        "mean_reversion_trading"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "countertrend"
+      ],
+      "status": "active"
+    },
+    "crowded_trade_reversal": {
+      "canonical_id": "crowded_trade_reversal",
+      "description": "Reversal driven by overcrowded positioning (late entrants trapped, forced exits, or profit-taking cascade).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "crowded_trade",
+        "overcrowding_reversal",
+        "positioning_reversal"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "deep_pullback": {
+      "canonical_id": "deep_pullback",
+      "description": "A pullback that retraces a large portion of the prior move (often testing key support/resistance) before trend continuation or reversal.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "big_pullback",
+        "deep_retracement",
+        "large_pullback"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "doji": {
+      "canonical_id": "doji",
+      "description": "Bar with small or no body, indecision",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "doji",
+        "doji_bar",
+        "indecision"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "doji"
+      ],
+      "status": "deprecated"
+    },
+    "doji_day": {
+      "canonical_id": "doji_day",
+      "description": "Day with doji characteristics",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "dominant_feature": {
+      "canonical_id": "dominant_feature",
+      "description": "A huge surprise bar big enough to dominate the rest of the day (and sometimes multiple days). Essentially a very large surprise bar with extended influence on price action.",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "day_dominating_bar",
+        "dominant_bar",
+        "huge_surprise_bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "double_bottom_bull_flag": {
+      "canonical_id": "double_bottom_bull_flag",
+      "description": "Bull flag continuation pattern resembling a double bottom (W) within a pullback before trend resumption.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "db",
+        "double bottom bull flag",
+        "double_bottom_as_bull_flag",
+        "hl_db",
+        "ll_db",
+        "w_bull_flag"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "double bottom bull flag"
+      ],
+      "status": "active"
+    },
+    "double_top_bear_flag": {
+      "canonical_id": "double_top_bear_flag",
+      "description": "Bear flag that forms a double top before resuming down, often a second-entry short context.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "bear_flag_double_top",
+        "double top bear flag",
+        "double_top_in_bear_flag",
+        "dt",
+        "dt_bear_flag"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "double top bear flag"
+      ],
+      "status": "active"
+    },
+    "dueling_trendlines": {
+      "canonical_id": "dueling_trendlines",
+      "description": "Price compresses between opposing trendlines (bull and bear lines) creating a tight decision zone before breakout.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "competing_trendlines",
+        "converging_trendlines",
+        "trendline_squeeze"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "efficient_market_dynamics": {
+      "canonical_id": "efficient_market_dynamics",
+      "description": "How information, liquidity, and participant behavior drive price discovery and randomness.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "market_efficiency_dynamics",
+        "price_discovery_dynamics"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "efficient_market_hypothesis": {
+      "canonical_id": "efficient_market_hypothesis",
+      "description": "The view that prices reflect available information, limiting persistent exploitable edges.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "efficient_markets_hypothesis",
+        "emh"
+      ],
+      "abbreviations": [
+        "EMH"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "ema": {
+      "canonical_id": "ema",
+      "description": "Exponential moving average (EMA) concept (generic, period-agnostic).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "ema",
+        "exponential moving average"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "ema_20": {
+      "canonical_id": "ema_20",
+      "description": "20-bar exponential moving average (EMA 20).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "20 bar ema",
+        "20 bar exponential moving average",
+        "20 ema",
+        "20 period ema",
+        "20-bar ema",
+        "20-bar exponential moving average",
+        "20-period ema",
+        "ema 20",
+        "ema(20)"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "20 bar exponential moving average"
+      ],
+      "status": "active"
+    },
+    "endless_pullback": {
+      "canonical_id": "endless_pullback",
+      "description": "Pullback that keeps extending",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "entry_bar": {
+      "canonical_id": "entry_bar",
+      "description": "Entry bar (the bar used for entry execution/trigger).",
+      "category": "signal",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "entry bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "entry bar"
+      ],
+      "status": "active"
+    },
+    "equidistant_move_probability": {
+      "canonical_id": "equidistant_move_probability",
+      "description": "Probability framing based on equal-distance moves (e.g., odds of reaching +X vs -X first).",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "equal_distance_probability",
+        "first_hit_probability",
+        "symmetric_target_stop_odds"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "exhaustion": {
+      "canonical_id": "exhaustion",
+      "description": "Exhaustion phase - trend losing momentum",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "trend_exhaustion"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "exhaustion_gap": {
+      "canonical_id": "exhaustion_gap",
+      "description": "A late-trend gap signaling potential trend exhaustion and increased reversal risk.",
+      "category": "gap",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "runaway_to_exhaustion_gap",
+        "terminal_gap"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "expanding_triangle": {
+      "canonical_id": "expanding_triangle",
+      "description": "A broadening formation with higher highs and lower lows (megaphone) indicating increasing volatility and two-sided trading.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "broadening_formation",
+        "broadening_triangle",
+        "et",
+        "expanding triangle",
+        "megaphone"
+      ],
+      "abbreviations": [
+        "ET"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "expanding triangle"
+      ],
+      "status": "active"
+    },
+    "expectancy_math": {
+      "canonical_id": "expectancy_math",
+      "description": "Trade expectancy concepts and calculations (win rate, average win/loss, expectancy per trade).",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "ev_math",
+        "expectancy",
+        "expected_value"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "failed_breakout": {
+      "canonical_id": "failed_breakout",
+      "description": "Breakout that reverses back into range",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "breakout_failure",
+        "failed breakout",
+        "failed_bo",
+        "false_breakout",
+        "fbo",
+        "trap"
+      ],
+      "abbreviations": [
+        "FBO"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "failed breakout",
+        "trap"
+      ],
+      "status": "active"
+    },
+    "failed_breakout_long": {
+      "canonical_id": "failed_breakout_long",
+      "description": "Upside breakout fails and reverses",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "bull_breakout_failure"
+      ],
+      "abbreviations": [
+        "FBOL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "failed_breakout_short": {
+      "canonical_id": "failed_breakout_short",
+      "description": "Downside breakout fails and reverses",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "bear_breakout_failure"
+      ],
+      "abbreviations": [
+        "FBOS"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "failed_double_bottom": {
+      "canonical_id": "failed_double_bottom",
+      "description": "Double bottom pattern that fails to reverse up",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "double_bottom_failure"
+      ],
+      "abbreviations": [
+        "FDB"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "failed_double_top": {
+      "canonical_id": "failed_double_top",
+      "description": "Double top pattern that fails to reverse down",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "double_top_failure"
+      ],
+      "abbreviations": [
+        "FDT"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "failed_reversal": {
+      "canonical_id": "failed_reversal",
+      "description": "Reversal attempt that failed",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "failed_wedge_bottom": {
+      "canonical_id": "failed_wedge_bottom",
+      "description": "Wedge bottom pattern that fails to reverse up",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "wedge_bottom_failure"
+      ],
+      "abbreviations": [
+        "FWB"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "failed_wedge_short": {
+      "canonical_id": "failed_wedge_short",
+      "description": "Short setup after a wedge pattern fails (wedge breakout or reversal attempt fails, leading to downside).",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "failed_wedge_breakout_short",
+        "failed_wedge_sell",
+        "wedge_failure_short"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "failed_wedge_top": {
+      "canonical_id": "failed_wedge_top",
+      "description": "Wedge top pattern that fails to reverse down",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "wedge_top_failure"
+      ],
+      "abbreviations": [
+        "FWT"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "final_flag": {
+      "canonical_id": "final_flag",
+      "description": "Last flag/pullback late in a trend that often precedes trend exhaustion and a reversal or deeper correction.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "final_bear_flag",
+        "final_bull_flag",
+        "last_flag"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "first_reversal_failed": {
+      "canonical_id": "first_reversal_failed",
+      "description": "First reversal attempt fails to sustain",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "first_reversal_failure"
+      ],
+      "abbreviations": [
+        "FRF"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "five_tick_failure": {
+      "canonical_id": "five_tick_failure",
+      "description": "Very small breakout/attempt (often a few ticks) that fails quickly and reverses, used as a scalp signal.",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "five tick failure",
+        "micro_breakout_failure",
+        "small_breakout_failure",
+        "tick_failure"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "five tick failure"
+      ],
+      "status": "active"
+    },
+    "follow_through": {
+      "canonical_id": "follow_through",
+      "description": "Confirmation price action after a signal bar/breakout, indicating continuation or failure.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "confirmation",
+        "continuation_confirmation",
+        "follow through",
+        "follow_through_bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "follow through",
+        "follow through bar"
+      ],
+      "status": "active"
+    },
+    "fomc": {
+      "canonical_id": "fomc",
+      "description": "FOMC meeting/announcement concept.",
+      "category": "pattern",
+      "tier": "metadata",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "federal open market committee meeting and announcement",
+        "fomc"
+      ],
+      "abbreviations": [
+        "FOMC"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "federal open market committee meeting and announcement"
+      ],
+      "status": "active"
+    },
+    "fractal_timeframe_invariance": {
+      "canonical_id": "fractal_timeframe_invariance",
+      "description": "Assumption that price action patterns and behaviors repeat similarly across timeframes.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "fractal_markets",
+        "multi_timeframe_fractal",
+        "timeframe_invariance"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "gap": {
+      "canonical_id": "gap",
+      "description": "Gap concept (price gap).",
+      "category": "gap",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "gap"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "gap"
+      ],
+      "status": "active"
+    },
+    "gap_bar": {
+      "canonical_id": "gap_bar",
+      "description": "Bar with no overlap with previous bar - gap up (current low > previous high) or gap down (current high < previous low). Shows urgency.",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "gap",
+        "price_gap"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "gap_down": {
+      "canonical_id": "gap_down",
+      "description": "Downward gap opening",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "gap_open_strength": {
+      "canonical_id": "gap_open_strength",
+      "description": "Assessing the strength/quality of an opening gap to infer trend potential and trade tactics.",
+      "category": "gap",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "gap_quality",
+        "gap_strength",
+        "opening_gap_strength"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "gap_reversal": {
+      "canonical_id": "gap_reversal",
+      "description": "Reversal setup where a gap up/down fails and price reverses direction, often closing the gap.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "gap reversal",
+        "gap_fade",
+        "gap_failure",
+        "gap_fill_reversal"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "gap reversal"
+      ],
+      "status": "active"
+    },
+    "gap_up": {
+      "canonical_id": "gap_up",
+      "description": "Upward gap opening",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "globex_session": {
+      "canonical_id": "globex_session",
+      "description": "Globex session (overnight futures session).",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "globex session",
+        "gx"
+      ],
+      "abbreviations": [
+        "GX"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "globex session"
+      ],
+      "status": "active"
+    },
+    "head_and_shoulders_as_flag": {
+      "canonical_id": "head_and_shoulders_as_flag",
+      "description": "A head-and-shoulders-shaped pullback that functions as a continuation flag within a larger trend.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "head_and_shoulders_continuation",
+        "head_and_shoulders_flag",
+        "hs_as_flag"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "head_and_shoulders_bottom": {
+      "canonical_id": "head_and_shoulders_bottom",
+      "description": "Head and shoulders bottom reversal",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "head_and_shoulders_top": {
+      "canonical_id": "head_and_shoulders_top",
+      "description": "Head and shoulders top reversal",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "hedging": {
+      "canonical_id": "hedging",
+      "description": "Reducing net exposure by taking offsetting positions or instruments to manage risk.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "delta_hedge",
+        "offsetting_position",
+        "risk_hedge"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "high_1": {
+      "canonical_id": "high_1",
+      "description": "First pullback in bull trend (High 1 setup)",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "first_high",
+        "h1",
+        "high1",
+        "one legged pullback in a bull move"
+      ],
+      "abbreviations": [
+        "H1"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "one legged pullback in a bull move"
+      ],
+      "status": "active"
+    },
+    "high_2": {
+      "canonical_id": "high_2",
+      "description": "Second pullback in bull trend (High 2 setup)",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "h2",
+        "high2",
+        "second_high"
+      ],
+      "abbreviations": [
+        "H2"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "high_4": {
+      "canonical_id": "high_4",
+      "description": "Fourth pullback in an uptrend (High 4) used as a continuation entry setup after three prior pullbacks.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "fourth_pullback_buy_setup",
+        "h4",
+        "high4"
+      ],
+      "abbreviations": [
+        "H4"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "high_frequency_trading": {
+      "canonical_id": "high_frequency_trading",
+      "description": "Ultra-short-term automated trading using very high order rates and low-latency execution.",
+      "category": "trade_management",
+      "tier": "metadata",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "hft",
+        "high frequency trading",
+        "low_latency_trading",
+        "ultra_high_frequency"
+      ],
+      "abbreviations": [
+        "HFT"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "high frequency trading"
+      ],
+      "status": "active"
+    },
+    "higher_high": {
+      "canonical_id": "higher_high",
+      "description": "Higher high in structure",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "higher_high_double_top": {
+      "canonical_id": "higher_high_double_top",
+      "description": "Double top with higher high variant",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "higher_high_major_trend_reversal": {
+      "canonical_id": "higher_high_major_trend_reversal",
+      "description": "Major trend reversal at higher high",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "higher_low": {
+      "canonical_id": "higher_low",
+      "description": "Higher low (HL) structural concept.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "higher low"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "higher low"
+      ],
+      "status": "active"
+    },
+    "higher_low_double_bottom": {
+      "canonical_id": "higher_low_double_bottom",
+      "description": "Double bottom with higher low",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "higher_low_major_trend_reversal": {
+      "canonical_id": "higher_low_major_trend_reversal",
+      "description": "Major trend reversal at higher low",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "ignore_news_flow": {
+      "canonical_id": "ignore_news_flow",
+      "description": "Deliberately not incorporating news/events into trade decisions, relying on price action only.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "news_agnostic",
+        "no_news_trading",
+        "trade_without_news"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "indicator_overreliance": {
+      "canonical_id": "indicator_overreliance",
+      "description": "Excessive dependence on indicators at the expense of context, leading to poor decisions.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "indicator_addiction",
+        "indicator_dependence"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "indicator_skepticism": {
+      "canonical_id": "indicator_skepticism",
+      "description": "A preference for price action/context over indicator signals due to lag and false precision.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "anti_indicator",
+        "indicator_distrust"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "inflection_area": {
+      "canonical_id": "inflection_area",
+      "description": "A price zone where the market is likely to change behavior (support/resistance pivot) and traders watch for reversal or acceleration.",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "decision_point",
+        "inflection_zone",
+        "pivot_area"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "information_hygiene": {
+      "canonical_id": "information_hygiene",
+      "description": "Managing information inputs to reduce noise and maintain decision quality (sources, timing, volume).",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "info_diet",
+        "information_discipline",
+        "signal_to_noise"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "inside_bar": {
+      "canonical_id": "inside_bar",
+      "description": "Bar with high/low within prior bar range",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "ib",
+        "ii",
+        "iii",
+        "inside",
+        "inside bar"
+      ],
+      "abbreviations": [
+        "IB",
+        "II",
+        "III"
+      ],
+      "aliases": [
+        "ii",
+        "iii"
+      ],
+      "glossary_terms": [
+        "ii",
+        "iii",
+        "inside bar"
+      ],
+      "status": "active"
+    },
+    "inside_outside_inside": {
+      "canonical_id": "inside_outside_inside",
+      "description": "Inside-Outside-Inside (IOI) pattern (an outside bar surrounded by inside bars).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "inside outside inside",
+        "inside_inside",
+        "ioi"
+      ],
+      "abbreviations": [
+        "IOI"
+      ],
+      "aliases": [
+        "ioi"
+      ],
+      "glossary_terms": [
+        "ioi"
+      ],
+      "status": "active"
+    },
+    "institutional_context": {
+      "canonical_id": "institutional_context",
+      "description": "Contextual factors from institutional participation (e.g., session opens, news, order flow/liquidity zones) used to frame trade decisions.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "institutional_order_flow_context",
+        "macro_context",
+        "smart_money_context"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "island_reversal": {
+      "canonical_id": "island_reversal",
+      "description": "Reversal pattern where price gaps away from a range and later gaps back, leaving an isolated 'island' of bars.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "island_bottom",
+        "island_top"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "ledge_pattern": {
+      "canonical_id": "ledge_pattern",
+      "description": "Tight sideways pause/step (ledge) that can act as a continuation or reversal structure (bull or bear ledge).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "ledge",
+        "price_ledge",
+        "tight_ledge"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "ledge"
+      ],
+      "status": "active"
+    },
+    "lifecycle_confirmed": {
+      "canonical_id": "lifecycle_confirmed",
+      "description": "Pattern/setup has been confirmed (Schema V3)",
+      "category": "lifecycle",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "pattern_confirmed"
+      ],
+      "abbreviations": [
+        "LC"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "lifecycle_expired": {
+      "canonical_id": "lifecycle_expired",
+      "description": "Pattern/setup has expired without resolution (Schema V3)",
+      "category": "lifecycle",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "pattern_expired"
+      ],
+      "abbreviations": [
+        "LE"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "lifecycle_forming": {
+      "canonical_id": "lifecycle_forming",
+      "description": "Pattern/setup is forming but not yet confirmed (Schema V3)",
+      "category": "lifecycle",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "pattern_forming"
+      ],
+      "abbreviations": [
+        "LF"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "lifecycle_invalidated": {
+      "canonical_id": "lifecycle_invalidated",
+      "description": "Pattern/setup has been invalidated (Schema V3)",
+      "category": "lifecycle",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "pattern_invalidated"
+      ],
+      "abbreviations": [
+        "LI"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "limit_order_logic": {
+      "canonical_id": "limit_order_logic",
+      "description": "Using limit orders for entry",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "fade_entry",
+        "limit_entry",
+        "limit_order",
+        "limit_order_bears",
+        "limit_order_bulls"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_above_ema20": {
+      "canonical_id": "location_above_ema20",
+      "description": "Price trading above the 20-bar EMA",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "above_ema"
+      ],
+      "abbreviations": [
+        ">EMA"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_at_major_resistance": {
+      "canonical_id": "location_at_major_resistance",
+      "description": "Price at significant resistance level",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "at_resistance"
+      ],
+      "abbreviations": [
+        "@RES"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_at_major_support": {
+      "canonical_id": "location_at_major_support",
+      "description": "Price at significant support level",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "at_support"
+      ],
+      "abbreviations": [
+        "@SUP"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_at_measured_move_target": {
+      "canonical_id": "location_at_measured_move_target",
+      "description": "Price reaching a measured move projection",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "at_mm_target"
+      ],
+      "abbreviations": [
+        "@MM"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_below_ema20": {
+      "canonical_id": "location_below_ema20",
+      "description": "Price trading below the 20-bar EMA",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "below_ema"
+      ],
+      "abbreviations": [
+        "<EMA"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_bottom_of_range": {
+      "canonical_id": "location_bottom_of_range",
+      "description": "Price at lower boundary of trading range",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "range_bottom"
+      ],
+      "abbreviations": [
+        "@RB"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_near_ema20": {
+      "canonical_id": "location_near_ema20",
+      "description": "Price within a few ticks of the 20-bar EMA",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "at_ema",
+        "touching_ema"
+      ],
+      "abbreviations": [
+        "@EMA"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_near_open": {
+      "canonical_id": "location_near_open",
+      "description": "Price near session open level",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "at_open"
+      ],
+      "abbreviations": [
+        "@OPEN"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_near_prior_close": {
+      "canonical_id": "location_near_prior_close",
+      "description": "Price near previous session close",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "at_prior_close"
+      ],
+      "abbreviations": [
+        "@PC"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_near_prior_day_high": {
+      "canonical_id": "location_near_prior_day_high",
+      "description": "Price near previous day's high",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "at_pdh",
+        "near_pdh"
+      ],
+      "abbreviations": [
+        "@PDH"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_near_prior_day_low": {
+      "canonical_id": "location_near_prior_day_low",
+      "description": "Price near previous day's low",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "at_pdl",
+        "near_pdl"
+      ],
+      "abbreviations": [
+        "@PDL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "location_top_of_range": {
+      "canonical_id": "location_top_of_range",
+      "description": "Price at upper boundary of trading range",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "range_top"
+      ],
+      "abbreviations": [
+        "@RT"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "low_1": {
+      "canonical_id": "low_1",
+      "description": "First pullback in bear trend (Low 1 setup)",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "first_low",
+        "l1",
+        "low1",
+        "one legged pullback in a bear move"
+      ],
+      "abbreviations": [
+        "L1"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "one legged pullback in a bear move"
+      ],
+      "status": "active"
+    },
+    "low_2": {
+      "canonical_id": "low_2",
+      "description": "Second pullback in bear trend (Low 2 setup)",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "l2",
+        "low2",
+        "second_low"
+      ],
+      "abbreviations": [
+        "L2"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "low_4": {
+      "canonical_id": "low_4",
+      "description": "Fourth pullback in a downtrend (Low 4) used as a continuation entry setup after three prior pullbacks.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "fourth_pullback_sell_setup",
+        "l4",
+        "low4"
+      ],
+      "abbreviations": [
+        "L4"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "lower_high": {
+      "canonical_id": "lower_high",
+      "description": "Lower high (LH) structural concept.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "lower high"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "lower high"
+      ],
+      "status": "active"
+    },
+    "lower_high_double_top": {
+      "canonical_id": "lower_high_double_top",
+      "description": "Double top with lower high",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "lower_high_major_trend_reversal": {
+      "canonical_id": "lower_high_major_trend_reversal",
+      "description": "Major trend reversal at lower high",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "lower_low": {
+      "canonical_id": "lower_low",
+      "description": "Lower low in structure",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "lower_low_double_bottom": {
+      "canonical_id": "lower_low_double_bottom",
+      "description": "Double bottom with lower low variant",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "lower_low_major_trend_reversal": {
+      "canonical_id": "lower_low_major_trend_reversal",
+      "description": "Major trend reversal at lower low",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "lower_tail_large": {
+      "canonical_id": "lower_tail_large",
+      "description": "Large lower tail/wick",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "large_lower_wick"
+      ],
+      "abbreviations": [
+        "LTL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "lower_tail_small": {
+      "canonical_id": "lower_tail_small",
+      "description": "Small lower tail/wick",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "small_lower_wick"
+      ],
+      "abbreviations": [
+        "LTS"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "major_bear_surprise": {
+      "canonical_id": "major_bear_surprise",
+      "description": "Major surprise bar in bear direction",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "major_bull_surprise": {
+      "canonical_id": "major_bull_surprise",
+      "description": "Major surprise bar in bull direction",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "major_surprise_bar": {
+      "canonical_id": "major_surprise_bar",
+      "description": "Major surprise bar (especially big/important surprise bar).",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "major surprise bar",
+        "major_surprise",
+        "very big surprise bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "major_trend_reversal": {
+      "canonical_id": "major_trend_reversal",
+      "description": "Significant reversal of prior trend",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "hh_mtr",
+        "hl_mtr",
+        "lh_mtr",
+        "ll_mtr",
+        "major trend reversal",
+        "major_reversal",
+        "mtr",
+        "trend_reversal"
+      ],
+      "abbreviations": [
+        "MTR"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "major trend reversal",
+        "trend reversal"
+      ],
+      "status": "active"
+    },
+    "martingale_risk": {
+      "canonical_id": "martingale_risk",
+      "description": "Risk approach that increases position size after losses to recover prior losses, often via averaging down/up.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "double_down_risk",
+        "martingale",
+        "progressive_betting"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "measured_move": {
+      "canonical_id": "measured_move",
+      "description": "Price projection based on a prior swing or range height, expecting a similar distance move from a breakout or reversal point.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "measured move",
+        "measured_move_projection",
+        "measured_move_target",
+        "mm",
+        "mm_down",
+        "mm_up"
+      ],
+      "abbreviations": [
+        "MM"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "measured move"
+      ],
+      "status": "active"
+    },
+    "measuring_gap": {
+      "canonical_id": "measuring_gap",
+      "description": "Gap that often marks midpoint of move",
+      "category": "gap",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "continuation_gap",
+        "measured_gap",
+        "measuring gap"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "measuring gap"
+      ],
+      "status": "active"
+    },
+    "media_noise": {
+      "canonical_id": "media_noise",
+      "description": "Low-signal media commentary that distracts from actionable market information.",
+      "category": "psychology",
+      "tier": "low_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "commentary_noise",
+        "headline_noise",
+        "news_noise"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "micro_channel": {
+      "canonical_id": "micro_channel",
+      "description": "Tight sequence of small trend bars with little/no pullback, often leading to a climactic move or breakout test.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "micro channel",
+        "microchannel",
+        "small_pullback_trend",
+        "tight_channel"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "micro channel",
+        "tight channel"
+      ],
+      "status": "active"
+    },
+    "micro_double_bottom": {
+      "canonical_id": "micro_double_bottom",
+      "description": "Small double bottom pattern on lower timeframe",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "double_bottom",
+        "mdb",
+        "micro double bottom",
+        "small_double_bottom"
+      ],
+      "abbreviations": [
+        "MDB"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "double bottom",
+        "micro double bottom"
+      ],
+      "status": "active"
+    },
+    "micro_double_top": {
+      "canonical_id": "micro_double_top",
+      "description": "Small double top pattern on lower timeframe",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "double_top",
+        "mdt",
+        "micro double top",
+        "small_double_top"
+      ],
+      "abbreviations": [
+        "MDT"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "double top",
+        "micro double top"
+      ],
+      "status": "active"
+    },
+    "micro_trend_line": {
+      "canonical_id": "micro_trend_line",
+      "description": "A short-term trendline drawn over a small number of bars to define immediate trend direction and signal minor breakouts or reversals.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "micro_trendline",
+        "minor_trendline",
+        "mtl",
+        "short_term_trendline"
+      ],
+      "abbreviations": [
+        "MTL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "micro_wedge": {
+      "canonical_id": "micro_wedge",
+      "description": "Small wedge pattern (typically 3 pushes) on a lower timeframe or within a larger pattern.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "mini_wedge",
+        "small_wedge"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "minor_reversal": {
+      "canonical_id": "minor_reversal",
+      "description": "Minor reversal (not major trend change)",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "minor_wedge": {
+      "canonical_id": "minor_wedge",
+      "description": "Small/minor wedge pattern",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "momentum_programs": {
+      "canonical_id": "momentum_programs",
+      "description": "Algorithmic/institutional buying or selling that accelerates price movement in the direction of momentum.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "algo_momentum",
+        "program_buying",
+        "program_selling"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "moving_average": {
+      "canonical_id": "moving_average",
+      "description": "Moving average concept (MA).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "exponential moving average",
+        "moving average"
+      ],
+      "abbreviations": [
+        "EMA",
+        "MA"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "exponential moving average",
+        "moving average"
+      ],
+      "status": "active"
+    },
+    "moving_average_gap": {
+      "canonical_id": "moving_average_gap",
+      "description": "Price separating from a moving average by an unusually large distance, often used as an overextension/mean-reversion context.",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "distance_from_moving_average",
+        "ema_gap",
+        "ema_gap_bar",
+        "ma_gap",
+        "moving_average_separation"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "neckline": {
+      "canonical_id": "neckline",
+      "description": "Head and shoulders neckline",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "negative_gap": {
+      "canonical_id": "negative_gap",
+      "description": "A gap down where the current bar opens below the prior bar's low (down gap).",
+      "category": "gap",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bear_gap",
+        "down_gap",
+        "gap_down",
+        "negative gap"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "negative gap"
+      ],
+      "status": "active"
+    },
+    "nested_wedge": {
+      "canonical_id": "nested_wedge",
+      "description": "Wedge within a wedge pattern",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "news_bias": {
+      "canonical_id": "news_bias",
+      "description": "Cognitive bias where news narratives skew market interpretation and trade decisions.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "headline_bias",
+        "narrative_bias",
+        "story_bias"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "news_filtering": {
+      "canonical_id": "news_filtering",
+      "description": "Selecting which news/events to consider and which to ignore to avoid noise-driven decisions.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "event_filtering",
+        "headline_filtering",
+        "news_curation"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "oo": {
+      "canonical_id": "oo",
+      "description": "Outside-Outside bar pattern",
+      "category": "bar_classification",
+      "tier": "medium_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "opening_reversal": {
+      "canonical_id": "opening_reversal",
+      "description": "A reversal setup occurring near the session open, often after an opening drive or gap, where early direction fails and price reverses.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "open_reversal",
+        "opening reversal",
+        "opening_swing_reversal",
+        "or"
+      ],
+      "abbreviations": [
+        "OR"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "opening reversal"
+      ],
+      "status": "active"
+    },
+    "outcome_bear_trap_risk": {
+      "canonical_id": "outcome_bear_trap_risk",
+      "description": "Context suggests risk of trapping shorts (failed breakout down)",
+      "category": "outcome",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "bear_trap_likely"
+      ],
+      "abbreviations": [
+        "OBEAR"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "outcome_bounce_likely": {
+      "canonical_id": "outcome_bounce_likely",
+      "description": "Context suggests high probability of bounce/reversal up",
+      "category": "outcome",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "bounce_expected"
+      ],
+      "abbreviations": [
+        "OBL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "outcome_bull_trap_risk": {
+      "canonical_id": "outcome_bull_trap_risk",
+      "description": "Context suggests risk of trapping longs (failed breakout up)",
+      "category": "outcome",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "bull_trap_likely"
+      ],
+      "abbreviations": [
+        "OBTR"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "outcome_continuation_likely": {
+      "canonical_id": "outcome_continuation_likely",
+      "description": "Context suggests trend continuation is probable",
+      "category": "outcome",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "continuation_expected"
+      ],
+      "abbreviations": [
+        "OCL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "outcome_reversal_possible": {
+      "canonical_id": "outcome_reversal_possible",
+      "description": "Context suggests potential for trend reversal",
+      "category": "outcome",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "reversal_risk"
+      ],
+      "abbreviations": [
+        "ORP"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "outcome_trap_risk": {
+      "canonical_id": "outcome_trap_risk",
+      "description": "Context suggests elevated risk of trapping traders",
+      "category": "outcome",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "trap_likely"
+      ],
+      "abbreviations": [
+        "OTR"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "outcome_two_sided_likely": {
+      "canonical_id": "outcome_two_sided_likely",
+      "description": "Context suggests both directions are viable (range behavior)",
+      "category": "outcome",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "two_sided_market"
+      ],
+      "abbreviations": [
+        "OTSL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "outside_bar": {
+      "canonical_id": "outside_bar",
+      "description": "Bar with high/low beyond prior bar range",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "consecutive_outside_bars",
+        "engulfing",
+        "ob",
+        "outside",
+        "outside bar"
+      ],
+      "abbreviations": [
+        "OB"
+      ],
+      "aliases": [
+        "oo"
+      ],
+      "glossary_terms": [
+        "outside bar"
+      ],
+      "status": "active"
+    },
+    "outside_down": {
+      "canonical_id": "outside_down",
+      "description": "Outside bar closing down",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "outside_down_day": {
+      "canonical_id": "outside_down_day",
+      "description": "Outside day closing down",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "outside_up": {
+      "canonical_id": "outside_up",
+      "description": "Outside bar closing up",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "outside_up_day": {
+      "canonical_id": "outside_up_day",
+      "description": "Outside day closing up",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "parabolic_wedge": {
+      "canonical_id": "parabolic_wedge",
+      "description": "Accelerating wedge with climactic move",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "climactic_wedge",
+        "parabolic wedge",
+        "parabolic_curve",
+        "pw"
+      ],
+      "abbreviations": [
+        "PW"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "parabolic wedge"
+      ],
+      "status": "active"
+    },
+    "parabolic_wedge_bottom": {
+      "canonical_id": "parabolic_wedge_bottom",
+      "description": "Parabolic wedge bottom pattern",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "parabolic_wedge_top": {
+      "canonical_id": "parabolic_wedge_top",
+      "description": "Parabolic wedge top pattern",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pattern_role_entry_bar": {
+      "canonical_id": "pattern_role_entry_bar",
+      "description": "Bar used for entry execution",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "entry_bar_role"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pattern_role_follow_through": {
+      "canonical_id": "pattern_role_follow_through",
+      "description": "Bar that confirms or denies a signal",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "follow_through_bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pattern_role_signal_bar": {
+      "canonical_id": "pattern_role_signal_bar",
+      "description": "Bar that signals a potential entry",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "signal_bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "phase_bucket_early": {
+      "canonical_id": "phase_bucket_early",
+      "description": "Early phase of trading session (Schema V3)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "early_session"
+      ],
+      "abbreviations": [
+        "PBE"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "phase_bucket_late": {
+      "canonical_id": "phase_bucket_late",
+      "description": "Late phase of trading session (Schema V3)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "late_session"
+      ],
+      "abbreviations": [
+        "PBL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "phase_bucket_mid": {
+      "canonical_id": "phase_bucket_mid",
+      "description": "Mid phase of trading session (Schema V3)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "mid_session"
+      ],
+      "abbreviations": [
+        "PBM"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "poor_signal_bar": {
+      "canonical_id": "poor_signal_bar",
+      "description": "Signal bar that reduces trade quality",
+      "category": "signal",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bad_signal_bar",
+        "poor_setup",
+        "weak_signal"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "position_sizing": {
+      "canonical_id": "position_sizing",
+      "description": "Determining trade size based on risk, volatility, and account constraints to manage exposure.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "bet_sizing",
+        "risk_based_sizing",
+        "trade_sizing"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pressure_buy_climax": {
+      "canonical_id": "pressure_buy_climax",
+      "description": "Climactic buying with potential exhaustion top",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "buying_climax"
+      ],
+      "abbreviations": [
+        "PBC"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pressure_climactic": {
+      "canonical_id": "pressure_climactic",
+      "description": "Extreme price action indicating potential exhaustion",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "climactic_move"
+      ],
+      "abbreviations": [
+        "PCLX"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pressure_failed_follow_through_down": {
+      "canonical_id": "pressure_failed_follow_through_down",
+      "description": "Downside follow-through attempt fails, suggesting buying pressure",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "failed_bear_follow_through"
+      ],
+      "abbreviations": [
+        "PFFD"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pressure_failed_follow_through_up": {
+      "canonical_id": "pressure_failed_follow_through_up",
+      "description": "Upside follow-through attempt fails, suggesting selling pressure",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "failed_bull_follow_through"
+      ],
+      "abbreviations": [
+        "PFFU"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pressure_orderly": {
+      "canonical_id": "pressure_orderly",
+      "description": "Controlled price movement without panic or climax",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "orderly_move"
+      ],
+      "abbreviations": [
+        "PORD"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pressure_sell_climax": {
+      "canonical_id": "pressure_sell_climax",
+      "description": "Climactic selling with potential exhaustion bottom",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "selling_climax"
+      ],
+      "abbreviations": [
+        "PSC"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pressure_strong_bear_closes": {
+      "canonical_id": "pressure_strong_bear_closes",
+      "description": "Repeated bars closing near lows indicating selling pressure",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bear_closes"
+      ],
+      "abbreviations": [
+        "PSBC"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "pressure_strong_bull_closes": {
+      "canonical_id": "pressure_strong_bull_closes",
+      "description": "Repeated bars closing near highs indicating buying pressure",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bull_closes"
+      ],
+      "abbreviations": [
+        "PSBL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "price_action": {
+      "canonical_id": "price_action",
+      "description": "Price action concept (bar-by-bar context and patterns).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "price action",
+        "price-action"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "price action"
+      ],
+      "status": "active"
+    },
+    "price_action_rationale": {
+      "canonical_id": "price_action_rationale",
+      "description": "The underlying reasoning for why a price action setup should work given context and incentives.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "setup_rationale",
+        "why_it_works"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "price_action_reading": {
+      "canonical_id": "price_action_reading",
+      "description": "Reading market structure and order-flow clues directly from price bars without indicators.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "price_action_analysis",
+        "reading_price_action"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "price_magnet": {
+      "canonical_id": "price_magnet",
+      "description": "Price magnet concept (a level above/below that price is drawn toward).",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "magnet above",
+        "magnet below",
+        "mga",
+        "mgb",
+        "price magnet"
+      ],
+      "abbreviations": [
+        "MGA",
+        "MGB"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "magnet above",
+        "magnet below"
+      ],
+      "status": "active"
+    },
+    "price_magnets": {
+      "canonical_id": "price_magnets",
+      "description": "Areas/prices that tend to attract price (e.g., prior highs/lows, gaps, measured move targets, round numbers).",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "magnet",
+        "magnet_levels",
+        "magnet_price"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "prior_signal_bar_target": {
+      "canonical_id": "prior_signal_bar_target",
+      "description": "Using a prior signal bar (or its high/low) as a target/magnet for exits or partial profits.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "prior_bar_target",
+        "prior_signal_target",
+        "signal_bar_target"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "probability_mindset": {
+      "canonical_id": "probability_mindset",
+      "description": "Framing outcomes as probabilistic and focusing on process over individual trade results.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "probabilistic_thinking",
+        "process_over_outcome",
+        "thinking_in_probabilities"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "process_over_outcome": {
+      "canonical_id": "process_over_outcome",
+      "description": "Emphasizing adherence to a repeatable trading process over short-term P&L outcomes.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "outcome_independence",
+        "process_based_trading",
+        "process_focus"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "profit_taking_covering": {
+      "canonical_id": "profit_taking_covering",
+      "description": "Reversal or pause driven by traders taking profits and shorts covering after an extended move.",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "covering_rally",
+        "profit_taking",
+        "ptg",
+        "short_covering"
+      ],
+      "abbreviations": [
+        "PTG"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "profit taking"
+      ],
+      "status": "active"
+    },
+    "pullback": {
+      "canonical_id": "pullback",
+      "description": "Pullback concept (countertrend move within a larger trend).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "pullback"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "pullback"
+      ],
+      "status": "active"
+    },
+    "pullback_entry": {
+      "canonical_id": "pullback_entry",
+      "description": "Entry on pullback within existing trend",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "pb_entry",
+        "pullback_trade",
+        "with_trend_pullback"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "regime_bear_trend_pullback": {
+      "canonical_id": "regime_bear_trend_pullback",
+      "description": "Bear trend experiencing a pullback/correction phase",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "transitional",
+      "synonyms": [
+        "bear_pullback_phase"
+      ],
+      "abbreviations": [
+        "RBEP"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "regime_broad_channel": {
+      "canonical_id": "regime_broad_channel",
+      "description": "Wide channel with significant swings between boundaries",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_range",
+      "synonyms": [
+        "broad_channel_regime"
+      ],
+      "abbreviations": [
+        "RBC"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "regime_bull_trend_pullback": {
+      "canonical_id": "regime_bull_trend_pullback",
+      "description": "Bull trend experiencing a pullback/correction phase",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "transitional",
+      "synonyms": [
+        "bull_pullback_phase"
+      ],
+      "abbreviations": [
+        "RBTP"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "regime_spike_and_channel": {
+      "canonical_id": "regime_spike_and_channel",
+      "description": "Trend structure with initial spike followed by orderly channel",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "spike_channel_regime"
+      ],
+      "abbreviations": [
+        "RSC"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "regime_strong_bear_trend": {
+      "canonical_id": "regime_strong_bear_trend",
+      "description": "Strong downtrend with minimal pullbacks and strong bear closes",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "bear_trend_strong",
+        "strong_bear"
+      ],
+      "abbreviations": [
+        "RSBE"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "regime_strong_bull_trend": {
+      "canonical_id": "regime_strong_bull_trend",
+      "description": "Strong uptrend with minimal pullbacks and strong bull closes",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "bull_trend_strong",
+        "strong_bull"
+      ],
+      "abbreviations": [
+        "RSBT"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "regime_trading_range": {
+      "canonical_id": "regime_trading_range",
+      "description": "Sideways price action with defined support/resistance boundaries",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_range",
+      "synonyms": [
+        "range",
+        "sideways_market"
+      ],
+      "abbreviations": [
+        "RTR"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "resistance": {
+      "canonical_id": "resistance",
+      "description": "Resistance level/zone where sellers are expected (or have previously been active).",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "prior_high",
+        "resistance"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "resistance"
+      ],
+      "status": "active"
+    },
+    "reversal": {
+      "canonical_id": "reversal",
+      "description": "Reversal concept (direction change / reversal attempt).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "reversal"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "reversal"
+      ],
+      "status": "active"
+    },
+    "reversal_bar": {
+      "canonical_id": "reversal_bar",
+      "description": "Reversal bar concept (signal bar / reversal bar).",
+      "category": "signal",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "reversal bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "reversal bar"
+      ],
+      "status": "active"
+    },
+    "reversal_down": {
+      "canonical_id": "reversal_down",
+      "description": "Downward reversal / bear reversal",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "reversal_up": {
+      "canonical_id": "reversal_up",
+      "description": "Upward reversal / bull reversal",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "reward_risk_compensation": {
+      "canonical_id": "reward_risk_compensation",
+      "description": "Idea that lower probability setups require higher reward/risk (and vice versa) to be viable.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "probability_reward_tradeoff",
+        "risk_reward_tradeoff",
+        "rr_compensation"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "reward_risk_ratio": {
+      "canonical_id": "reward_risk_ratio",
+      "description": "The ratio of expected reward (target) to risk (stop) used to evaluate trade structure.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "reward_to_risk",
+        "risk_reward_ratio",
+        "rr"
+      ],
+      "abbreviations": [
+        "RR"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "risk_management": {
+      "canonical_id": "risk_management",
+      "description": "Position sizing, stop placement, and trade management rules to control downside and volatility of outcomes.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "money_management",
+        "risk_control",
+        "trade_risk_management"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "risk_tight_stop": {
+      "canonical_id": "risk_tight_stop",
+      "description": "Using tight/close stop placement",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "close_stop",
+        "small_stop",
+        "tight_stop"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "risk_wide_stop": {
+      "canonical_id": "risk_wide_stop",
+      "description": "Using wide/loose stop placement",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "large_stop",
+        "loose_stop",
+        "wide_stop"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "scale_in_scalp": {
+      "canonical_id": "scale_in_scalp",
+      "description": "Scalping tactic that scales into a position with multiple entries to improve average price and exit on a small move.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "multiple_entry_scalp",
+        "scale_in_scalping",
+        "scaling_in_scalp"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "scaling_in": {
+      "canonical_id": "scaling_in",
+      "description": "Scaling into a position",
+      "category": "trade_management",
+      "tier": "medium_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "scaling_in_out": {
+      "canonical_id": "scaling_in_out",
+      "description": "Managing a position by adding and reducing size in multiple tranches during the trade.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "partial_entries_exits",
+        "position_tranching",
+        "scale_in",
+        "scale_in_scale_out"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "scalp": {
+      "canonical_id": "scalp",
+      "description": "Scalp concept (short-duration trade targeting small moves).",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "scalp"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "scalp"
+      ],
+      "status": "active"
+    },
+    "scalp_vs_swing": {
+      "canonical_id": "scalp_vs_swing",
+      "description": "Discussion of scalp vs swing trade approaches",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "scalping",
+        "swing_trade",
+        "trade_management"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "swing trade"
+      ],
+      "status": "active"
+    },
+    "second_entry_buy": {
+      "canonical_id": "second_entry_buy",
+      "description": "Second entry buy signal",
+      "category": "signal",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "second_entry_failed": {
+      "canonical_id": "second_entry_failed",
+      "description": "Second entry setup fails (H2/L2 failure)",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "h2_failure",
+        "l2_failure"
+      ],
+      "abbreviations": [
+        "SEF"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "second_entry_long": {
+      "canonical_id": "second_entry_long",
+      "description": "Second attempt long entry after first pullback",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "2nd_entry_long",
+        "h2_long",
+        "second_long"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "second_entry_sell": {
+      "canonical_id": "second_entry_sell",
+      "description": "Second entry sell signal",
+      "category": "signal",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "second_entry_short": {
+      "canonical_id": "second_entry_short",
+      "description": "Second attempt short entry after first pullback",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "2nd_entry_short",
+        "l2_short",
+        "second_short"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "second_leg_down": {
+      "canonical_id": "second_leg_down",
+      "description": "Second leg down concept (follow-on leg lower after first leg down).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "2nd leg down",
+        "second leg down",
+        "second_leg_down"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "second_leg_trap": {
+      "canonical_id": "second_leg_trap",
+      "description": "Trap on second leg",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "second_leg_up": {
+      "canonical_id": "second_leg_up",
+      "description": "Second leg of rally",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "sell_climax": {
+      "canonical_id": "sell_climax",
+      "description": "Late bear trend climactic behavior, potential bottom",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "bear_climax",
+        "climactic_selling",
+        "exhaustion_bottom"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "sell_signal_bar": {
+      "canonical_id": "sell_signal_bar",
+      "description": "Sell signal bar (bar that triggers a sell entry).",
+      "category": "signal",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "bear_signal_bar",
+        "sell signal bar",
+        "ssb"
+      ],
+      "abbreviations": [
+        "SSB"
+      ],
+      "aliases": [
+        "bear_signal_bar"
+      ],
+      "glossary_terms": [
+        "sell signal bar"
+      ],
+      "status": "active"
+    },
+    "sell_stop_entry": {
+      "canonical_id": "sell_stop_entry",
+      "description": "Sell stop entry order",
+      "category": "trade_management",
+      "tier": "medium_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "sell_the_close": {
+      "canonical_id": "sell_the_close",
+      "description": "Sell The Close (STC) market state / tactic.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "sell the close",
+        "sell_the_close",
+        "stc"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "sell_vacuum": {
+      "canonical_id": "sell_vacuum",
+      "description": "A vacuum move downward where selling accelerates toward a downside magnet (prior low/support) as stops trigger, often ending in exhaustion and bounce.",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bear_vacuum",
+        "downside_vacuum",
+        "sell_vacuum_move"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "selling_pressure": {
+      "canonical_id": "selling_pressure",
+      "description": "Persistent dominance of sellers, seen as repeated bear closes, strong bear bodies, and/or inability of bulls to sustain rallies.",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "bear_pressure",
+        "sell_side_pressure",
+        "selling pressure",
+        "supply_pressure"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "selling pressure"
+      ],
+      "status": "active"
+    },
+    "session_after_close": {
+      "canonical_id": "session_after_close",
+      "description": "Primary after-close segment (exclusive session classification)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "after_close_segment"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "session_afternoon": {
+      "canonical_id": "session_afternoon",
+      "description": "Primary afternoon segment (exclusive session classification)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "afternoon_segment"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "session_extreme_high": {
+      "canonical_id": "session_extreme_high",
+      "description": "Session high extreme (High of Day / HOD).",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "high of the day",
+        "hod"
+      ],
+      "abbreviations": [
+        "HOD"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "high of the day"
+      ],
+      "status": "active"
+    },
+    "session_extreme_low": {
+      "canonical_id": "session_extreme_low",
+      "description": "Session low extreme (Low of Day / LOD).",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "lod",
+        "low of the day"
+      ],
+      "abbreviations": [
+        "LOD"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "low of the day"
+      ],
+      "status": "active"
+    },
+    "session_lunch": {
+      "canonical_id": "session_lunch",
+      "description": "Primary lunch segment (exclusive session classification)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "lunch_segment"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "session_morning": {
+      "canonical_id": "session_morning",
+      "description": "Primary morning segment (exclusive session classification)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "morning_segment"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "signal_bar": {
+      "canonical_id": "signal_bar",
+      "description": "Bar that signals a potential reversal - good body with close in direction of reversal, appearing after opposite-direction context. Triggers entry setups.",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "entry_bar",
+        "reversal_signal"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "small_pullback_bear_trend": {
+      "canonical_id": "small_pullback_bear_trend",
+      "description": "Bear trend with small pullbacks",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "small_pullback_bull_trend": {
+      "canonical_id": "small_pullback_bull_trend",
+      "description": "Small Pullback Bull Trend (SPBT) context/pattern.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "small pullback bull trend"
+      ],
+      "abbreviations": [
+        "SPBT"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "small pullback bull trend"
+      ],
+      "status": "active"
+    },
+    "spike": {
+      "canonical_id": "spike",
+      "description": "Spike move (sudden strong breakout)",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "spike_and_channel": {
+      "canonical_id": "spike_and_channel",
+      "description": "A trend structure with an initial sharp spike followed by a more orderly channel phase.",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "spike and channel",
+        "spike_and_channel_trend",
+        "spike_channel"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "spike and channel"
+      ],
+      "status": "active"
+    },
+    "spike_and_channel_bear": {
+      "canonical_id": "spike_and_channel_bear",
+      "description": "Spike and channel bear trend",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "spike_and_channel_bear_trend": {
+      "canonical_id": "spike_and_channel_bear_trend",
+      "description": "Bear spike and channel trend (directional variant). A sharp selloff (spike) followed by an orderly downward channel phase.",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "spike and channel bear trend"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "spike_and_channel_bull": {
+      "canonical_id": "spike_and_channel_bull",
+      "description": "Spike and channel bull trend",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "spike_and_channel_bull_trend": {
+      "canonical_id": "spike_and_channel_bull_trend",
+      "description": "Bull spike and channel trend (directional variant).",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "spike and channel bull trend",
+        "spike_and_channel_bull_trend"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "stair_step_trend": {
+      "canonical_id": "stair_step_trend",
+      "description": "A trend that advances in steps: impulse legs followed by brief consolidations/pullbacks.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "step_trend"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "stop_entry_logic": {
+      "canonical_id": "stop_entry_logic",
+      "description": "Using stop orders for entry",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "buy_stop",
+        "sell_stop",
+        "stop_entry",
+        "stop_order"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "stop_run": {
+      "canonical_id": "stop_run",
+      "description": "A move designed to trigger clustered stops beyond a prior swing/high/low, often followed by reversal or acceleration.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "liquidity_grab",
+        "stop_hunt",
+        "stop_sweep"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "stop_run_dynamics": {
+      "canonical_id": "stop_run_dynamics",
+      "description": "Price behavior driven by triggering clustered stops (liquidity grab), often causing spikes and reversals.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "stop_hunting",
+        "stop_run"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "support": {
+      "canonical_id": "support",
+      "description": "Support level/zone where buyers are expected (or have previously been active).",
+      "category": "location",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "prior_low",
+        "support"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "support"
+      ],
+      "status": "active"
+    },
+    "surprise_bar": {
+      "canonical_id": "surprise_bar",
+      "description": "A surprisingly big trend bar relative to recent bars showing unexpected strength. Signals the market needs to reprice and usually leads to at least a small 2nd leg in the surprise direction. Impacts roughly the next 5-20 bars. Types include breakout, reversal, exhaustion, and give-up. Tied to measured moves.",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "trigger",
+      "regime_class": null,
+      "synonyms": [
+        "big_surprise",
+        "surprise",
+        "unexpected_bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "swing": {
+      "canonical_id": "swing",
+      "description": "Swing concept (multi-bar move / swing trading).",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "swing",
+        "swing_down",
+        "swing_up"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "swing"
+      ],
+      "status": "active"
+    },
+    "system_trust": {
+      "canonical_id": "system_trust",
+      "description": "Adhering to a validated trading plan through variance without abandoning it prematurely.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "process_trust",
+        "trust_the_system"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "tails": {
+      "canonical_id": "tails",
+      "description": "Bar tails/wicks",
+      "category": "bar_classification",
+      "tier": "medium_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "test_of_ema": {
+      "canonical_id": "test_of_ema",
+      "description": "Test of moving average",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "test_of_high": {
+      "canonical_id": "test_of_high",
+      "description": "Test of prior high",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "test_of_low": {
+      "canonical_id": "test_of_low",
+      "description": "Test of prior low",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "test_of_open": {
+      "canonical_id": "test_of_open",
+      "description": "Test of day's open price",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "three_push_pullback": {
+      "canonical_id": "three_push_pullback",
+      "description": "A pullback that unfolds in three distinct pushes/legs (often a wedge-like correction) before resuming the prior trend or reversing.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "3_push_pullback",
+        "three_leg_pullback",
+        "three_pushes",
+        "three_pushes_correction",
+        "three_pushes_down",
+        "three_pushes_up"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "tight_bear_channel": {
+      "canonical_id": "tight_bear_channel",
+      "description": "Tight bear channel (strong trend)",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "tight_bull_channel": {
+      "canonical_id": "tight_bull_channel",
+      "description": "Tight bull channel (strong trend)",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "intraday_trend",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "time_after_close": {
+      "canonical_id": "time_after_close",
+      "description": "Final bars after regular close (bars 79-81, 3:00-3:15 PM CT)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "after_close",
+        "post_close"
+      ],
+      "abbreviations": [
+        "TAC"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "time_afternoon": {
+      "canonical_id": "time_afternoon",
+      "description": "Afternoon session (bars 49-78, 1:00-3:00 PM CT)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "afternoon",
+        "pm_session"
+      ],
+      "abbreviations": [
+        "TA"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "time_close": {
+      "canonical_id": "time_close",
+      "description": "The close - final 30 min before regular close (bars 73-78, 2:30-3:00 PM CT)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "close",
+        "closing_bars"
+      ],
+      "abbreviations": [
+        "TC"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "time_lunch": {
+      "canonical_id": "time_lunch",
+      "description": "Lunch session (bars 31-48, 11:00 AM - 1:00 PM CT)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "lunch",
+        "midday"
+      ],
+      "abbreviations": [
+        "TL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "time_morning": {
+      "canonical_id": "time_morning",
+      "description": "Morning session (bars 1-30, 8:30-11:00 CT)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "am_session",
+        "morning"
+      ],
+      "abbreviations": [
+        "TM"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "time_open": {
+      "canonical_id": "time_open",
+      "description": "The open - first 30 min of RTH session (bars 1-6, 8:30-9:00 CT)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "open",
+        "opening_bars"
+      ],
+      "abbreviations": [
+        "TO"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "time_opening_range": {
+      "canonical_id": "time_opening_range",
+      "description": "Opening range - first hour of RTH session (bars 1-12, 8:30-9:30 CT)",
+      "category": "time_bucket",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "session",
+      "synonyms": [
+        "opening_range",
+        "or"
+      ],
+      "abbreviations": [
+        "TOR"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "timeframe_mismatch": {
+      "canonical_id": "timeframe_mismatch",
+      "description": "Using signals from one timeframe while managing risk/targets on an incompatible timeframe.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "multi_timeframe_mismatch",
+        "tf_misalignment",
+        "timeframe_conflict"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trade_equivalence_reentry": {
+      "canonical_id": "trade_equivalence_reentry",
+      "description": "Treating a stopped-out trade and an immediate re-entry as equivalent to holding through, based on context and math.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "reentry_equivalence",
+        "stopout_reentry_logic",
+        "trade_equivalence"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trader_flexibility": {
+      "canonical_id": "trader_flexibility",
+      "description": "Willingness to change bias or tactics as new information and context emerge.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "adaptability",
+        "flexible_bias"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "traders_equation": {
+      "canonical_id": "traders_equation",
+      "description": "Framework relating probability, reward/risk, and trade management to profitability (the trader's equation).",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "probability_rr_framework",
+        "profitability_equation",
+        "trader_equation"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trading_discipline": {
+      "canonical_id": "trading_discipline",
+      "description": "Consistent execution of rules for entries, exits, sizing, and risk management despite emotions.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "discipline",
+        "execution_discipline"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trading_edge": {
+      "canonical_id": "trading_edge",
+      "description": "A repeatable statistical advantage that yields positive expectancy over many trades.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "edge",
+        "positive_expectancy",
+        "statistical_edge"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trading_psychology": {
+      "canonical_id": "trading_psychology",
+      "description": "Mental and emotional factors affecting trading decisions, discipline, and risk-taking.",
+      "category": "psychology",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "mindset",
+        "psychology",
+        "trader_psychology"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trading_range": {
+      "canonical_id": "trading_range",
+      "description": "Sideways price action with defined support/resistance",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_range",
+      "synonyms": [
+        "consolidation",
+        "horizontal",
+        "overlap",
+        "range",
+        "sideways",
+        "tight_range",
+        "tight_tr",
+        "tight_trading_range",
+        "trading range"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "tight trading range",
+        "trading range"
+      ],
+      "status": "active"
+    },
+    "trading_range_day": {
+      "canonical_id": "trading_range_day",
+      "description": "Trading Range Day (TRD) concept.",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "day_type",
+      "synonyms": [
+        "trading range day",
+        "trd"
+      ],
+      "abbreviations": [
+        "TRD"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "trading range day"
+      ],
+      "status": "active"
+    },
+    "trailing_stop": {
+      "canonical_id": "trailing_stop",
+      "description": "A stop-loss that moves in the trade's favor to lock in gains or reduce risk as price advances.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "trail_stop",
+        "trailing_stop_loss"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trailing_stop_swing_low": {
+      "canonical_id": "trailing_stop_swing_low",
+      "description": "Trailing stop method that ratchets the stop to the most recent swing low (for longs) as the trade moves in favor.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "swing_low_trailing_stop",
+        "trail_stop_to_swing_low",
+        "trailing_stop_below_swing_low"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trap_pattern": {
+      "canonical_id": "trap_pattern",
+      "description": "Setup where traders are lured into a breakout/entry that quickly reverses, trapping them.",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "bear_trap",
+        "bull_trap",
+        "trap_trade"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trap_trading": {
+      "canonical_id": "trap_trading",
+      "description": "Trading setups that exploit trapped traders after a failed breakout/breakdown or reversal.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "trap_setup",
+        "trapped_traders"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trapped_bears": {
+      "canonical_id": "trapped_bears",
+      "description": "Trapped bears (shorts who sold and are trapped after a failed move down). Creates urgency to cover, adding to buying pressure.",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": "transitional",
+      "synonyms": [
+        "trapped bears"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trapped_bulls": {
+      "canonical_id": "trapped_bulls",
+      "description": "Trapped bulls (bulls who bought and are trapped after a failed move up).",
+      "category": "failure_mode",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": "transitional",
+      "synonyms": [
+        "trapped bulls",
+        "trapped_bulls"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trend": {
+      "canonical_id": "trend",
+      "description": "Trend concept.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "trend"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "trend"
+      ],
+      "status": "active"
+    },
+    "trend_bar": {
+      "canonical_id": "trend_bar",
+      "description": "Trend bar (strong directional bar, often with close near extreme).",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "trend bar"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "trend bar"
+      ],
+      "status": "active"
+    },
+    "trend_channel_line_overshoot": {
+      "canonical_id": "trend_channel_line_overshoot",
+      "description": "Price overshooting trend channel line",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "channel_line_break",
+        "channel_overshoot",
+        "tcl_overshoot"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trend_channel_line_undershoot": {
+      "canonical_id": "trend_channel_line_undershoot",
+      "description": "Price briefly breaks past the trend channel line (overshoots/undershoots) before reversing back into the channel, often signaling exhaustion or a trap.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "channel_line_undershoot",
+        "tcl_undershoot",
+        "trend channel line undershoot",
+        "trend_channel_line_undershoot"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "trend channel line undershoot"
+      ],
+      "status": "active"
+    },
+    "trend_day": {
+      "canonical_id": "trend_day",
+      "description": "Trend day (day type characterized by sustained trending behavior).",
+      "category": "regime",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "day_type",
+      "synonyms": [
+        "td",
+        "trend day",
+        "trend_day"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trend_from_the_open": {
+      "canonical_id": "trend_from_the_open",
+      "description": "Intraday session that trends strongly from the open with minimal pullbacks, often offering early entries and measured-move targets.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_trend",
+      "synonyms": [
+        "open_drive_trend",
+        "tfo",
+        "trend from the open",
+        "trend_day_from_the_open"
+      ],
+      "abbreviations": [
+        "TFO"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "trend from the open"
+      ],
+      "status": "active"
+    },
+    "trend_line": {
+      "canonical_id": "trend_line",
+      "description": "Trend line / trendline concept.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "trend line",
+        "trendline",
+        "trendline_break"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "trend line"
+      ],
+      "status": "active"
+    },
+    "trend_resumption": {
+      "canonical_id": "trend_resumption",
+      "description": "Trend resuming after consolidation",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "outcome",
+      "regime_class": null,
+      "synonyms": [
+        "resume_trend",
+        "trend resumption",
+        "trend_continuation",
+        "tres"
+      ],
+      "abbreviations": [
+        "TRES"
+      ],
+      "aliases": [],
+      "glossary_terms": [
+        "trend resumption",
+        "trend resumption down",
+        "trend resumption up"
+      ],
+      "status": "active"
+    },
+    "trend_strength": {
+      "canonical_id": "trend_strength",
+      "description": "Assessment of how strong a trend is (e.g., momentum, slope, overlap, pullback depth) to guide trade selection.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "trend_momentum",
+        "trend_power",
+        "trend_quality"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trend_weakening_sequence": {
+      "canonical_id": "trend_weakening_sequence",
+      "description": "A sequence of price action showing loss of trend strength (e.g., smaller trend bars, more overlap, more pullbacks) often preceding a trading range or reversal.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "transitional",
+      "synonyms": [
+        "loss_of_momentum",
+        "momentum_fading_sequence",
+        "trend_weakening"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trending_range": {
+      "canonical_id": "trending_range",
+      "description": "A trading range with a directional drift (overlapping bars but higher highs/lows or lower highs/lows).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_range",
+      "synonyms": [
+        "drifting_trading_range",
+        "trend_in_a_range",
+        "trending_trading_range"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trending_trading_range_bear": {
+      "canonical_id": "trending_trading_range_bear",
+      "description": "A bear-biased trading range that trends downward overall (a weak bear trend with frequent reversals).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_range",
+      "synonyms": [
+        "bear_trending_trading_range",
+        "bearish_trending_range",
+        "downtrending_trading_range"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trending_trading_range_bull": {
+      "canonical_id": "trending_trading_range_bull",
+      "description": "A bull-biased trading range that trends upward overall (a weak bull trend with frequent reversals and overlapping bars).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": "intraday_range",
+      "synonyms": [
+        "bull_trending_trading_range",
+        "bullish_trending_range",
+        "uptrending_trading_range"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trending_trading_range_day": {
+      "canonical_id": "trending_trading_range_day",
+      "description": "Day with trending trading range",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": "day_type",
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "trendline_break_retest": {
+      "canonical_id": "trendline_break_retest",
+      "description": "A trendline break followed by a pullback/retest of the broken line as support/resistance.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "break_and_retest",
+        "trendline_retest"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "triangle_breakout_mode": {
+      "canonical_id": "triangle_breakout_mode",
+      "description": "Breakout Mode setup where price compresses into a triangle and is poised to break out in either direction.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": "transitional",
+      "synonyms": [
+        "breakout_mode_triangle",
+        "triangle_bm",
+        "triangle_compression_breakout_mode"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "triangle_pattern": {
+      "canonical_id": "triangle_pattern",
+      "description": "Triangle consolidation pattern (symmetrical/ascending/descending) formed by converging trendlines.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "ascending_triangle",
+        "descending_triangle",
+        "symmetrical_triangle",
+        "triangle"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "truncated_wedge": {
+      "canonical_id": "truncated_wedge",
+      "description": "Wedge with fewer than 3 legs",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "twenty_gap_bars": {
+      "canonical_id": "twenty_gap_bars",
+      "description": "A trend condition where bars do not touch the moving average for ~20 or more bars, indicating strong trend and limited pullbacks.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "20_bar_gap_from_ma",
+        "20_gap_bars",
+        "twenty_gap_bar_buy",
+        "twenty_gap_bar_trend"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "two_bar_reversal": {
+      "canonical_id": "two_bar_reversal",
+      "description": "Reversal pattern formed by two consecutive bars signaling a change in direction (often a strong entry signal).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "2_bar_reversal",
+        "2br"
+      ],
+      "abbreviations": [
+        "2BR"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "two_legged_pullback": {
+      "canonical_id": "two_legged_pullback",
+      "description": "Pullback that unfolds in two legs (two pushes) against the trend before resuming the trend.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "2_legged_pullback",
+        "two_leg_pullback",
+        "two_push_pullback"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "two_legs": {
+      "canonical_id": "two_legs",
+      "description": "Two legs / two-push concept (generic two-legged structure).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "2 legs",
+        "two legs",
+        "two pushes",
+        "two_legged"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "two_reasons_rule": {
+      "canonical_id": "two_reasons_rule",
+      "description": "Trade filter requiring at least two independent reasons (confluence) to take a setup (e.g., pattern + context/support-resistance).",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "2_reasons_rule",
+        "confluence_rule",
+        "two_reasons"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "two_sided_trading": {
+      "canonical_id": "two_sided_trading",
+      "description": "Trading both long and short (or buying and selling) within the same market context, often in a range or breakout mode, without a persistent directional bias.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "management",
+      "regime_class": null,
+      "synonyms": [
+        "bi_directional_trading",
+        "both_sides_trading",
+        "two_way_trading"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "upper_tail_large": {
+      "canonical_id": "upper_tail_large",
+      "description": "Large upper tail/wick",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "large_upper_wick"
+      ],
+      "abbreviations": [
+        "UTL"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "upper_tail_small": {
+      "canonical_id": "upper_tail_small",
+      "description": "Small upper tail/wick",
+      "category": "bar_classification",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "small_upper_wick"
+      ],
+      "abbreviations": [
+        "UTS"
+      ],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "vacuum_effect": {
+      "canonical_id": "vacuum_effect",
+      "description": "Price accelerates toward a nearby magnet (prior high/low, gap, measured move) due to stop orders and thin liquidity, often leading to overshoot and potential reversal.",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "magnet_effect",
+        "price_vacuum",
+        "vacuum_move"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "vacuum_move": {
+      "canonical_id": "vacuum_move",
+      "description": "A fast directional move through an area with little opposing order flow or support/resistance.",
+      "category": "pressure",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "air_pocket_move",
+        "vacuum"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "vacuum"
+      ],
+      "status": "active"
+    },
+    "wedge": {
+      "canonical_id": "wedge",
+      "description": "Wedge concept (3 pushes / converging swings).",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "consecutive_wedges",
+        "wedge"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [
+        "wedge"
+      ],
+      "status": "active"
+    },
+    "wedge_bear_flag": {
+      "canonical_id": "wedge_bear_flag",
+      "description": "Wedge-shaped bear flag",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "wedge_bottom": {
+      "canonical_id": "wedge_bottom",
+      "description": "Three-push wedge pattern at bottom",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "falling_wedge",
+        "three_push_bottom",
+        "wedge_bull"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "wedge_bull_flag": {
+      "canonical_id": "wedge_bull_flag",
+      "description": "Bull flag pattern shaped as a wedge (typically a falling wedge) that breaks out upward in the direction of the prior bull trend.",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "bull_wedge_flag",
+        "falling_wedge_bull_flag",
+        "wedge_flag_bullish"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "wedge_rally": {
+      "canonical_id": "wedge_rally",
+      "description": "Rally forming a wedge shape",
+      "category": "pattern",
+      "tier": "medium_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "wedge_top": {
+      "canonical_id": "wedge_top",
+      "description": "Three-push wedge pattern at top",
+      "category": "pattern",
+      "tier": "high_signal",
+      "role": "setup",
+      "regime_class": null,
+      "synonyms": [
+        "rising_wedge",
+        "three_push_top",
+        "wedge_bear"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    },
+    "win_probability_estimation": {
+      "canonical_id": "win_probability_estimation",
+      "description": "Estimating probability of winning (or reaching targets) to inform trade selection and sizing.",
+      "category": "trade_management",
+      "tier": "high_signal",
+      "role": "context",
+      "regime_class": null,
+      "synonyms": [
+        "edge_estimation",
+        "probability_estimation",
+        "win_rate_estimation"
+      ],
+      "abbreviations": [],
+      "aliases": [],
+      "glossary_terms": [],
+      "status": "active"
+    }
+  },
+  "stats": {
+    "total_tags": 354,
+    "with_abbreviations": 106,
+    "with_aliases": 6,
+    "mapped_glossary_terms": 89,
+    "new_candidate_terms": 142,
+    "deprecated_tags": 3,
+    "ambiguous_glossary_entries": 1
+  }
+}

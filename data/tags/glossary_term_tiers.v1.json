@@ -1,0 +1,21 @@
+{
+  "tier_map_version": "glossary_term_tiers.v1",
+  "generated_utc": "2025-12-23T00:00:00Z",
+  "default_tier": "high_signal_concept",
+  "tiers": {
+    "pip": "low_signal_language",
+    "likely": "low_signal_language",
+    "probably": "low_signal_language",
+    "risk": "low_signal_language",
+    "test": "low_signal_language",
+    "probability": "low_signal_language",
+    "context": "low_signal_language",
+    "lot": "low_signal_language",
+    "leg": "low_signal_language",
+    "usually": "low_signal_language",
+    "unlikely": "low_signal_language",
+    "setup": "low_signal_language",
+    "long": "low_signal_language"
+  }
+}
+

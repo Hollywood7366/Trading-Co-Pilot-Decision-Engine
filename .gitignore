@@ -1,0 +1,50 @@
+# ── Data (large, local-only) ──────────────────────
+data/scratch.db
+data/lance_db/
+data/scratch/
+
+# ── Python ────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# ── Virtual environments ──────────────────────────
+.venv/
+.venv311/
+venv/
+env/
+
+# ── IDE / Editor ──────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Secrets ───────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── Logs & temp ───────────────────────────────────
+logs/
+*.log
+out/
+temp/
+_artifacts/
+_errors/
+
+# ── Model artifacts (large) ──────────────────────
+models/*.pt
+models/*.onnx
+runs/

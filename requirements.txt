@@ -1,0 +1,10 @@
+# Core
+sqlalchemy>=2.0
+lancedb>=0.6
+pyarrow>=15.0
+
+# Embeddings
+openai>=1.0
+
+# Utilities
+python-dotenv>=1.0

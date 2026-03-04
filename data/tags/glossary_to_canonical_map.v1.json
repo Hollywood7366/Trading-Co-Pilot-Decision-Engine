@@ -1,0 +1,2875 @@
+{
+  "entries": [
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "ema_20",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "20 bar exponential moving average",
+      "glossary_term_raw_examples": [
+        "EMA    20 bar Exponential Moving Average"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "20 moving average gap bars",
+      "glossary_term_raw_examples": [
+        "20 moving average gap bars"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "always_in",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "always in",
+      "glossary_term_raw_examples": [
+        "always in"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "ail",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "always_in_long",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "always in long",
+      "glossary_term_raw_examples": [
+        "AIL     Always In Long"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "ais",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "always_in_short",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "always in short",
+      "glossary_term_raw_examples": [
+        "AIS     Always In Short"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "bar pullback",
+      "glossary_term_raw_examples": [
+        "bar pullback"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "barb_wire",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "barbwire",
+      "glossary_term_raw_examples": [
+        "barbwire"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "bear_flag",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "bear flag",
+      "glossary_term_raw_examples": [
+        "bear flag"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "bear_reversal",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "bear reversal",
+      "glossary_term_raw_examples": [
+        "bear reversal"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "blown account",
+      "glossary_term_raw_examples": [
+        "blown account"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "body gap formerly negative gap",
+      "glossary_term_raw_examples": [
+        "body gap (formerly negative gap)"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "breakout",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "breakout",
+      "glossary_term_raw_examples": [
+        "breakout"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "breakout bar or bar breakout",
+      "glossary_term_raw_examples": [
+        "breakout bar (or bar breakout)"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "breakout_mode",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "breakout mode",
+      "glossary_term_raw_examples": [
+        "breakout mode"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "breakout_pullback",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "breakout pullback",
+      "glossary_term_raw_examples": [
+        "breakout pullback"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "breakout test",
+      "glossary_term_raw_examples": [
+        "breakout test"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "bull_flag",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "bull flag",
+      "glossary_term_raw_examples": [
+        "bull flag"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "bull_reversal",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "bull reversal",
+      "glossary_term_raw_examples": [
+        "bull reversal"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "ba",
+      "canonical_targets": [],
+      "glossary_term_norm": "buy above or probably buyers at the high of the bar",
+      "glossary_term_raw_examples": [
+        "BA      Buy Above or probably buyers at the high of the bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "bsb",
+      "canonical_targets": [
+        {
+          "tag_id": "buy_signal_bar",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "buy signal bar",
+      "glossary_term_raw_examples": [
+        "BSB     Buy Signal Bar"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "buy the close bull trend",
+      "glossary_term_raw_examples": [
+        "Buy The Close bull trend"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "bvt",
+      "canonical_targets": [],
+      "glossary_term_norm": "buy vacuum test of resistance",
+      "glossary_term_raw_examples": [
+        "BVT     Buy Vacuum test of resistance"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "buying_pressure",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "buying pressure",
+      "glossary_term_raw_examples": [
+        "buying pressure"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "c close",
+      "glossary_term_raw_examples": [
+        "C       Close"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "candle",
+      "glossary_term_raw_examples": [
+        "candle"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "ch",
+      "canonical_targets": [
+        {
+          "tag_id": "channel",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "channel",
+      "glossary_term_raw_examples": [
+        "CH      Channel"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "chart type",
+      "glossary_term_raw_examples": [
+        "chart type"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "climax",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "climax",
+      "glossary_term_raw_examples": [
+        "climax"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "context",
+      "glossary_term_raw_examples": [
+        "context"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "countertrend_trading",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "countertrend",
+      "glossary_term_raw_examples": [
+        "countertrend"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "countertrend scalp",
+      "glossary_term_raw_examples": [
+        "countertrend scalp"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "day trade",
+      "glossary_term_raw_examples": [
+        "day trade"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "directional probability",
+      "glossary_term_raw_examples": [
+        "directional probability"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "disappointment bar",
+      "glossary_term_raw_examples": [
+        "disappointment bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "doji",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "doji",
+      "glossary_term_raw_examples": [
+        "doji"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "dominant feature",
+      "glossary_term_raw_examples": [
+        "dominant feature"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "micro_double_bottom",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "double bottom",
+      "glossary_term_raw_examples": [
+        "double bottom"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "double_bottom_bull_flag",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "double bottom bull flag",
+      "glossary_term_raw_examples": [
+        "double bottom bull flag"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "double bottom pullback",
+      "glossary_term_raw_examples": [
+        "double bottom pullback"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "micro_double_top",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "double top",
+      "glossary_term_raw_examples": [
+        "double top"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "double_top_bear_flag",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "double top bear flag",
+      "glossary_term_raw_examples": [
+        "double top bear flag"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "double top pullback",
+      "glossary_term_raw_examples": [
+        "double top pullback"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "early longs",
+      "glossary_term_raw_examples": [
+        "early longs"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "early shorts",
+      "glossary_term_raw_examples": [
+        "early shorts"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "entry_bar",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "entry bar",
+      "glossary_term_raw_examples": [
+        "entry bar"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "exhaustion gap in bear trend",
+      "glossary_term_raw_examples": [
+        "exhaustion gap in bear trend"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "exhaustion gap in bull trend",
+      "glossary_term_raw_examples": [
+        "exhaustion gap in bull trend"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "et",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "expanding_triangle",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "expanding triangle",
+      "glossary_term_raw_examples": [
+        "ET     Expanding Triangle"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "moving_average",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "exponential moving average",
+      "glossary_term_raw_examples": [
+        "exponential moving average (EMA)"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "fade",
+      "glossary_term_raw_examples": [
+        "fade"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "fbo",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "failed_breakout",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "failed breakout",
+      "glossary_term_raw_examples": [
+        "FBO    Failed BreakOut"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "failed failure",
+      "glossary_term_raw_examples": [
+        "failed failure"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "failure a failed move",
+      "glossary_term_raw_examples": [
+        "failure (a failed move)"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "false",
+      "glossary_term_raw_examples": [
+        "false"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "fomc",
+      "canonical_targets": [
+        {
+          "tag_id": "fomc",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "federal open market committee meeting and announcement",
+      "glossary_term_raw_examples": [
+        "FOMC   Federal Open Market Committee meeting and announcement"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "five_tick_failure",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "five tick failure",
+      "glossary_term_raw_examples": [
+        "five-tick failure"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "flat",
+      "glossary_term_raw_examples": [
+        "flat"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "follow_through",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "follow through",
+      "glossary_term_raw_examples": [
+        "follow-through"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "follow_through",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "follow through bar",
+      "glossary_term_raw_examples": [
+        "follow-through bar"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "gap",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "gap",
+      "glossary_term_raw_examples": [
+        "gap"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "gap bar",
+      "glossary_term_raw_examples": [
+        "gap bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "gap_reversal",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "gap reversal",
+      "glossary_term_raw_examples": [
+        "gap reversal"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "gxh",
+      "canonical_targets": [],
+      "glossary_term_norm": "globex high",
+      "glossary_term_raw_examples": [
+        "GXH   Globex High"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "gx",
+      "canonical_targets": [
+        {
+          "tag_id": "globex_session",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "globex session",
+      "glossary_term_raw_examples": [
+        "GX     Globex Session"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "h high or high of day",
+      "glossary_term_raw_examples": [
+        "H     High or High of Day"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "hft",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "high_frequency_trading",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "high frequency trading",
+      "glossary_term_raw_examples": [
+        "high-frequency trading (HFT)"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "high low 1 or 2",
+      "glossary_term_raw_examples": [
+        "high/low 1 or 2"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "hod",
+      "canonical_targets": [
+        {
+          "tag_id": "session_extreme_high",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "high of the day",
+      "glossary_term_raw_examples": [
+        "HOD   High of the Day"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "hoy",
+      "canonical_targets": [],
+      "glossary_term_norm": "high of yesterday",
+      "glossary_term_raw_examples": [
+        "HOY   High of Yesterday"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "hp",
+      "canonical_targets": [],
+      "glossary_term_norm": "high probability",
+      "glossary_term_raw_examples": [
+        "HP    High Probability"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "higher high",
+      "glossary_term_raw_examples": [
+        "higher high"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "higher_low",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "higher low",
+      "glossary_term_raw_examples": [
+        "higher low"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "htf",
+      "canonical_targets": [],
+      "glossary_term_norm": "higher time frame",
+      "glossary_term_raw_examples": [
+        "higher time frame (HTF)"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "inside_bar",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "ii",
+      "glossary_term_raw_examples": [
+        "ii"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "inside_bar",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "iii",
+      "glossary_term_raw_examples": [
+        "iii"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "inside_bar",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "inside bar",
+      "glossary_term_raw_examples": [
+        "inside bar"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "institution",
+      "glossary_term_raw_examples": [
+        "institution"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "inside_outside_inside",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "ioi",
+      "glossary_term_raw_examples": [
+        "ioi"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "ioi outside bar surrounded by inside bars",
+      "glossary_term_raw_examples": [
+        "ioi    Outside bar surrounded by Inside bars"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "l low or low of day",
+      "glossary_term_raw_examples": [
+        "L      Low or Low of Day"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "ledge_pattern",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "ledge",
+      "glossary_term_raw_examples": [
+        "ledge"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "leg",
+      "glossary_term_raw_examples": [
+        "leg"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "likely",
+      "glossary_term_raw_examples": [
+        "likely"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "long",
+      "glossary_term_raw_examples": [
+        "long"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "lot",
+      "glossary_term_raw_examples": [
+        "lot"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "lod",
+      "canonical_targets": [
+        {
+          "tag_id": "session_extreme_low",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "low of the day",
+      "glossary_term_raw_examples": [
+        "LOD    Low of the Day"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "loy",
+      "canonical_targets": [],
+      "glossary_term_norm": "low of yesterday",
+      "glossary_term_raw_examples": [
+        "LOY   Low of Yesterday"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "lp",
+      "canonical_targets": [],
+      "glossary_term_norm": "low probability so swing only or wait",
+      "glossary_term_raw_examples": [
+        "LP    Low Probability so swing only or wait"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "lower_high",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "lower high",
+      "glossary_term_raw_examples": [
+        "lower high"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "lower low",
+      "glossary_term_raw_examples": [
+        "lower low"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "mga",
+      "canonical_targets": [
+        {
+          "tag_id": "price_magnet",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "magnet above",
+      "glossary_term_raw_examples": [
+        "MGA   Magnet Above"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "mgb",
+      "canonical_targets": [
+        {
+          "tag_id": "price_magnet",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "magnet below",
+      "glossary_term_raw_examples": [
+        "MGB   Magnet Below"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "major trend line",
+      "glossary_term_raw_examples": [
+        "major trend line"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "major_trend_reversal",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "major trend reversal",
+      "glossary_term_raw_examples": [
+        "major trend reversal"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "mm",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "measured_move",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "measured move",
+      "glossary_term_raw_examples": [
+        "MM    Measured Move"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "measured move in bear trend",
+      "glossary_term_raw_examples": [
+        "measured move in bear trend"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "measured move in bull trend",
+      "glossary_term_raw_examples": [
+        "measured move in bull trend"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "measuring_gap",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "measuring gap",
+      "glossary_term_raw_examples": [
+        "measuring gap"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "melt up",
+      "glossary_term_raw_examples": [
+        "melt-up"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "meltdown",
+      "glossary_term_raw_examples": [
+        "meltdown"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "micro",
+      "glossary_term_raw_examples": [
+        "micro"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "micro_channel",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "micro channel",
+      "glossary_term_raw_examples": [
+        "micro channel"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "micro_double_bottom",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "micro double bottom",
+      "glossary_term_raw_examples": [
+        "micro double bottom"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "micro_double_top",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "micro double top",
+      "glossary_term_raw_examples": [
+        "micro double top"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "micro measuring gap",
+      "glossary_term_raw_examples": [
+        "micro measuring gap"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "micro trend channel line",
+      "glossary_term_raw_examples": [
+        "micro trend channel line"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "micro trend line breakout",
+      "glossary_term_raw_examples": [
+        "micro trend line breakout"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "mp",
+      "canonical_targets": [],
+      "glossary_term_norm": "midpoint",
+      "glossary_term_raw_examples": [
+        "MP    Midpoint"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "minor trend reversal",
+      "glossary_term_raw_examples": [
+        "minor trend reversal"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "money stop",
+      "glossary_term_raw_examples": [
+        "money stop"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "moving_average",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "moving average",
+      "glossary_term_raw_examples": [
+        "moving average"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "mag",
+      "canonical_targets": [],
+      "glossary_term_norm": "moving average gap bar",
+      "glossary_term_raw_examples": [
+        "MAG   Moving Average Gap Bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "moving average gap bar gap bar",
+      "glossary_term_raw_examples": [
+        "moving average gap bar (gap bar)"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "nl",
+      "canonical_targets": [],
+      "glossary_term_norm": "neckline",
+      "glossary_term_raw_examples": [
+        "NL     NeckLine"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "negative_gap",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "negative gap",
+      "glossary_term_raw_examples": [
+        "negative gap"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "news",
+      "glossary_term_raw_examples": [
+        "news"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "oio",
+      "glossary_term_raw_examples": [
+        "oio"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "l1",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "low_1",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "one legged pullback in a bear move",
+      "glossary_term_raw_examples": [
+        "L1     One legged PullBack in a bear move"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "h1",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "high_1",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "one legged pullback in a bull move",
+      "glossary_term_raw_examples": [
+        "H1    One legged pullback in a bull move"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "oo",
+      "glossary_term_raw_examples": [
+        "oo"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "ow",
+      "canonical_targets": [],
+      "glossary_term_norm": "open of week",
+      "glossary_term_raw_examples": [
+        "OW     Open of Week"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "opening_reversal",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "opening reversal",
+      "glossary_term_raw_examples": [
+        "opening reversal"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "orvd",
+      "canonical_targets": [],
+      "glossary_term_norm": "opening reversal down",
+      "glossary_term_raw_examples": [
+        "ORVD   Opening Reversal Down"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "orvu",
+      "canonical_targets": [],
+      "glossary_term_norm": "opening reversal up",
+      "glossary_term_raw_examples": [
+        "ORVU   Opening Reversal Up"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "outside_bar",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "outside bar",
+      "glossary_term_raw_examples": [
+        "outside bar"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "outside down bar",
+      "glossary_term_raw_examples": [
+        "outside down bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "outside up bar",
+      "glossary_term_raw_examples": [
+        "outside up bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "overshoot",
+      "glossary_term_raw_examples": [
+        "overshoot"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "p probability",
+      "glossary_term_raw_examples": [
+        "P      Probability"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "pbx",
+      "canonical_targets": [],
+      "glossary_term_norm": "parabolic buy climax",
+      "glossary_term_raw_examples": [
+        "PBX    Parabolic Buy Climax"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "psx",
+      "canonical_targets": [],
+      "glossary_term_norm": "parabolic sell climax",
+      "glossary_term_raw_examples": [
+        "PSX    Parabolic Sell Climax"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "pw",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "parabolic_wedge",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "parabolic wedge",
+      "glossary_term_raw_examples": [
+        "PW     Parabolic Wedge"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "pause bar",
+      "glossary_term_raw_examples": [
+        "pause bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "perfect trade",
+      "glossary_term_raw_examples": [
+        "perfect trade"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "pip",
+      "glossary_term_raw_examples": [
+        "pip"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "price_action",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "price action",
+      "glossary_term_raw_examples": [
+        "price action"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "probability",
+      "glossary_term_raw_examples": [
+        "probability"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "probably",
+      "glossary_term_raw_examples": [
+        "probably"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "ptg",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "profit_taking_covering",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "profit taking",
+      "glossary_term_raw_examples": [
+        "PTG    Profit Taking"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "pt",
+      "canonical_targets": [],
+      "glossary_term_norm": "profit target",
+      "glossary_term_raw_examples": [
+        "PT     Profit Target"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "pullback",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "pullback",
+      "glossary_term_raw_examples": [
+        "pullback"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "pullback bar",
+      "glossary_term_raw_examples": [
+        "pullback bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "rs",
+      "canonical_targets": [
+        {
+          "tag_id": "resistance",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "resistance",
+      "glossary_term_raw_examples": [
+        "RS     Resistance"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "reversal",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "reversal",
+      "glossary_term_raw_examples": [
+        "reversal"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "reversal_bar",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "reversal bar",
+      "glossary_term_raw_examples": [
+        "reversal bar"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "revd",
+      "canonical_targets": [
+        {
+          "tag_id": "bear_reversal",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "reversal down",
+      "glossary_term_raw_examples": [
+        "REVD   Reversal Down"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "reward",
+      "glossary_term_raw_examples": [
+        "reward"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "risk",
+      "glossary_term_raw_examples": [
+        "risk"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "risk off",
+      "glossary_term_raw_examples": [
+        "risk Off"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "risk on",
+      "glossary_term_raw_examples": [
+        "risk On"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "risky",
+      "glossary_term_raw_examples": [
+        "risky"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "sbr",
+      "canonical_targets": [],
+      "glossary_term_norm": "scale in bears",
+      "glossary_term_raw_examples": [
+        "SBR    Scale in Bears"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "sbl",
+      "canonical_targets": [],
+      "glossary_term_norm": "scale in bulls",
+      "glossary_term_raw_examples": [
+        "SBL    Scale in Bulls"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "scalp",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "scalp",
+      "glossary_term_raw_examples": [
+        "scalp"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "scalper",
+      "glossary_term_raw_examples": [
+        "scalper"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "scratch",
+      "glossary_term_raw_examples": [
+        "scratch"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "second entry",
+      "glossary_term_raw_examples": [
+        "second entry"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "second moving average gap bar setup",
+      "glossary_term_raw_examples": [
+        "second moving average gap bar setup"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "second signal",
+      "glossary_term_raw_examples": [
+        "second signal"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "ssb",
+      "canonical_targets": [
+        {
+          "tag_id": "sell_signal_bar",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "sell signal bar",
+      "glossary_term_raw_examples": [
+        "SSB    Sell Signal Bar"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "sell the close bear trend",
+      "glossary_term_raw_examples": [
+        "Sell The Close bear trend"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "svt",
+      "canonical_targets": [],
+      "glossary_term_norm": "sell vacuum test of support",
+      "glossary_term_raw_examples": [
+        "SVT    Sell Vacuum test of support"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "sb",
+      "canonical_targets": [],
+      "glossary_term_norm": "sellers below or probably sellers at the low of the bar",
+      "glossary_term_raw_examples": [
+        "SB     Sellers Below or probably sellers at the low of the bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "selling_pressure",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "selling pressure",
+      "glossary_term_raw_examples": [
+        "selling pressure"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "setup",
+      "glossary_term_raw_examples": [
+        "setup"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "shaved body",
+      "glossary_term_raw_examples": [
+        "shaved body"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "short",
+      "glossary_term_raw_examples": [
+        "short"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "shrinking stairs",
+      "glossary_term_raw_examples": [
+        "shrinking stairs"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "signal bar",
+      "glossary_term_raw_examples": [
+        "signal bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "small pullback bear trend",
+      "glossary_term_raw_examples": [
+        "Small Pullback Bear Trend"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "small_pullback_bull_trend",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "small pullback bull trend",
+      "glossary_term_raw_examples": [
+        "Small Pullback Bull Trend"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "stf",
+      "canonical_targets": [],
+      "glossary_term_norm": "smaller time frame",
+      "glossary_term_raw_examples": [
+        "smaller time frame (STF)"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "smart traders",
+      "glossary_term_raw_examples": [
+        "smart traders"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "spike_and_channel",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "spike and channel",
+      "glossary_term_raw_examples": [
+        "spike and channel"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "scb",
+      "canonical_targets": [],
+      "glossary_term_norm": "spike and channel bottom",
+      "glossary_term_raw_examples": [
+        "SCB    Spike and Channel Bottom"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "sct",
+      "canonical_targets": [],
+      "glossary_term_norm": "spike and channel top",
+      "glossary_term_raw_examples": [
+        "SCT    Spike and Channel Top"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "stair",
+      "glossary_term_raw_examples": [
+        "stair"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "strong bulls and bears",
+      "glossary_term_raw_examples": [
+        "strong bulls and bears"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "success",
+      "glossary_term_raw_examples": [
+        "success"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "sp",
+      "canonical_targets": [
+        {
+          "tag_id": "support",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "support",
+      "glossary_term_raw_examples": [
+        "SP     Support"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "surprise bar",
+      "glossary_term_raw_examples": [
+        "surprise bar"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "swing",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "swing",
+      "glossary_term_raw_examples": [
+        "swing"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "swing high",
+      "glossary_term_raw_examples": [
+        "swing high"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "swing high low",
+      "glossary_term_raw_examples": [
+        "swing high/low"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "swing low",
+      "glossary_term_raw_examples": [
+        "swing low"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "swing point",
+      "glossary_term_raw_examples": [
+        "swing point"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "scalp_vs_swing",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "swing trade",
+      "glossary_term_raw_examples": [
+        "swing trade"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "tga",
+      "canonical_targets": [],
+      "glossary_term_norm": "target above",
+      "glossary_term_raw_examples": [
+        "TGA    Target Above"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "tgb",
+      "canonical_targets": [],
+      "glossary_term_norm": "target below",
+      "glossary_term_raw_examples": [
+        "TGB    Target Below"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "test",
+      "glossary_term_raw_examples": [
+        "test"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "three pushes",
+      "glossary_term_raw_examples": [
+        "three pushes"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "tick",
+      "glossary_term_raw_examples": [
+        "tick"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "micro_channel",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "tight channel",
+      "glossary_term_raw_examples": [
+        "tight channel"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "trading_range",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "tight trading range",
+      "glossary_term_raw_examples": [
+        "tight trading range"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "time frame",
+      "glossary_term_raw_examples": [
+        "time frame"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "tradable",
+      "glossary_term_raw_examples": [
+        "tradable"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "trading_range",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "trading range",
+      "glossary_term_raw_examples": [
+        "trading range"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "trd",
+      "canonical_targets": [
+        {
+          "tag_id": "trading_range_day",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "trading range day",
+      "glossary_term_raw_examples": [
+        "TRD     Trading Range Day"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "trailing a stop",
+      "glossary_term_raw_examples": [
+        "trailing a stop"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "failed_breakout",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "trap",
+      "glossary_term_raw_examples": [
+        "trap"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "trapped in a trade",
+      "glossary_term_raw_examples": [
+        "trapped in a trade"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "trapped out of a trade",
+      "glossary_term_raw_examples": [
+        "trapped out of a trade"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "trend",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "trend",
+      "glossary_term_raw_examples": [
+        "trend"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "trend_bar",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "trend bar",
+      "glossary_term_raw_examples": [
+        "trend bar"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "trend channel line",
+      "glossary_term_raw_examples": [
+        "trend channel line"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "collision_exact_match",
+          "tag_id": "trend_channel_line_overshoot",
+          "weight": 0.5
+        },
+        {
+          "rationale": "collision_exact_match",
+          "tag_id": "trend_channel_line_undershoot",
+          "weight": 0.5
+        }
+      ],
+      "glossary_term_norm": "trend channel line overshoot",
+      "glossary_term_raw_examples": [
+        "trend channel line overshoot"
+      ],
+      "notes": "multiple_exact_matches",
+      "status": "ambiguous"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "trend_channel_line_undershoot",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "trend channel line undershoot",
+      "glossary_term_raw_examples": [
+        "trend channel line undershoot"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "trend_from_the_open",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "trend from the open",
+      "glossary_term_raw_examples": [
+        "trend from the open"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "trend_line",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "trend line",
+      "glossary_term_raw_examples": [
+        "trend line"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "tres",
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "trend_resumption",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "trend resumption",
+      "glossary_term_raw_examples": [
+        "TRES    Trend Resumption"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "tresd",
+      "canonical_targets": [
+        {
+          "tag_id": "trend_resumption",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "trend resumption down",
+      "glossary_term_raw_examples": [
+        "TRESD   Trend Resumption Down"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "tresu",
+      "canonical_targets": [
+        {
+          "tag_id": "trend_resumption",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "trend resumption up",
+      "glossary_term_raw_examples": [
+        "TRESU   Trend Resumption Up"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "major_trend_reversal",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "trend reversal",
+      "glossary_term_raw_examples": [
+        "trend reversal"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": "trevd",
+      "canonical_targets": [],
+      "glossary_term_norm": "trend reversal down",
+      "glossary_term_raw_examples": [
+        "TREVD   Trend Reversal Down"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "trevu",
+      "canonical_targets": [],
+      "glossary_term_norm": "trend reversal up",
+      "glossary_term_raw_examples": [
+        "TREVU   Trend Reversal Up"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "trending closes",
+      "glossary_term_raw_examples": [
+        "trending closes"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "trending highs or lows",
+      "glossary_term_raw_examples": [
+        "trending highs or lows"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "trending swings",
+      "glossary_term_raw_examples": [
+        "trending swings"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "ttrd",
+      "canonical_targets": [],
+      "glossary_term_norm": "trending trading range day",
+      "glossary_term_raw_examples": [
+        "TTRD    Trending Trading Range Day"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "ttrdd",
+      "canonical_targets": [],
+      "glossary_term_norm": "trending trading range day down",
+      "glossary_term_raw_examples": [
+        "TTRDD   Trending Trading Range Day down"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "ttrdu",
+      "canonical_targets": [],
+      "glossary_term_norm": "trending trading range day up",
+      "glossary_term_raw_examples": [
+        "TTRDU   Trending Trading Range Day up"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "trending trading ranges",
+      "glossary_term_raw_examples": [
+        "trending trading ranges"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "tl",
+      "canonical_targets": [],
+      "glossary_term_norm": "trendline",
+      "glossary_term_raw_examples": [
+        "TL      Trendline"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": "tw",
+      "canonical_targets": [],
+      "glossary_term_norm": "truncated wedge",
+      "glossary_term_raw_examples": [
+        "TW   Truncated Wedge"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "undershoot",
+      "glossary_term_raw_examples": [
+        "undershoot"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "unlikely",
+      "glossary_term_raw_examples": [
+        "unlikely"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "usually",
+      "glossary_term_raw_examples": [
+        "usually"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "rationale": "exact_match",
+          "tag_id": "vacuum_move",
+          "weight": 1.0
+        }
+      ],
+      "glossary_term_norm": "vacuum",
+      "glossary_term_raw_examples": [
+        "vacuum"
+      ],
+      "notes": "exact_match",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [
+        {
+          "tag_id": "wedge",
+          "weight": 1.0,
+          "rationale": "config_mapped_high_signal"
+        }
+      ],
+      "glossary_term_norm": "wedge",
+      "glossary_term_raw_examples": [
+        "wedge"
+      ],
+      "notes": "config_mapped_high_signal",
+      "status": "mapped"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "wedge flag",
+      "glossary_term_raw_examples": [
+        "wedge flag"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "wedge reversal",
+      "glossary_term_raw_examples": [
+        "wedge reversal"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    },
+    {
+      "abbreviation_norm": null,
+      "canonical_targets": [],
+      "glossary_term_norm": "with trend",
+      "glossary_term_raw_examples": [
+        "with trend"
+      ],
+      "notes": "no_match",
+      "status": "new_candidate"
+    }
+  ],
+  "generated_utc": "2025-12-23T15:39:52.272132+00:00",
+  "inputs": {
+    "glossary_path": "C:/Users/19852/Desktop/Al Video Ingestion/Al_Brooks/out/glossary.abbreviations.txt",
+    "tags_catalog_path": "C:/Users/19852/Desktop/Al Video Ingestion/Al_Brooks/assets/Books/_shared/tags_catalog.json"
+  },
+  "mapping_version": "glossary_to_canonical_map.v1"
+}

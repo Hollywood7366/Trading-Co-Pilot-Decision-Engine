@@ -1,0 +1,21 @@
+{
+  "version": "1",
+  "canonical_aliases": {
+    "bull_signal_bar": "buy_signal_bar",
+    "bear_signal_bar": "sell_signal_bar",
+    "doji": "bar_type_doji",
+    "ii": "inside_bar",
+    "iii": "inside_bar"
+  },
+  "pattern_ids_to_tags": {
+    "ii": "inside_bar",
+    "iii": "inside_bar",
+    "ioi": "inside_outside_inside",
+    "oo": "outside_bar"
+  },
+  "deprecation_notes": {
+    "bull_signal_bar": "Use buy_signal_bar (matches BSB abbreviation)",
+    "bear_signal_bar": "Use sell_signal_bar (matches SSB abbreviation)",
+    "doji": "Use bar_type_doji (matches BTD abbreviation)"
+  }
+}

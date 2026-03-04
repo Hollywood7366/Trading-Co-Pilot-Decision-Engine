@@ -1,0 +1,2746 @@
+{
+  "version": "2",
+  "description": "Mapping of multi-bar patterns to their required tag signals and atomic signals",
+  "source_files": [
+    "src/signals/pattern_rules.py",
+    "src/signals/vocabulary.py"
+  ],
+  "last_updated": "2026-01-27",
+  "mappings": {
+    "abc_correction": {
+      "description": "Three-leg corrective move (A-B-C) against prior trend",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "always_in": {
+      "description": "Always In concept (direction-neutral)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "always_in_long": {
+      "description": "Market condition where longs are favored continuously",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "always_in_short": {
+      "description": "Market condition where shorts are favored continuously",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "barb_wire": {
+      "description": "Tight overlapping bars with dojis, difficult to trade",
+      "bar_count": "5+",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "bar_type_doji"
+      ],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "overlap_ratio",
+        "range_compression",
+        "two_sided_score"
+      ],
+      "requires_swing_detection": false
+    },
+    "bear_breakout": {
+      "description": "Bear breakout (breakout down / breakdown)",
+      "bar_count": "1-2",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "breakout_bar_down",
+        "bar_type_bear"
+      ],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "breakout_failure_rate",
+        "breakout_strength",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "bear_channel": {
+      "description": "Bear channel (down-sloping channel) context",
+      "bar_count": "variable (15+)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "bear_flag": {
+      "description": "Pullback in bear trend forming flag shape",
+      "bar_count": "5-20",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "pullback_depth",
+        "pullback_bar_count",
+        "range_compression",
+        "two_sided_score"
+      ],
+      "requires_swing_detection": true
+    },
+    "bear_flag_around_moving_average_trap": {
+      "description": "Bear flag around MA that traps bears before reversing up",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "bear_ledge": {
+      "description": "Bearish ledge: tight consolidation with repeated highs as resistance",
+      "bar_count": "3-10",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "bear_leg": {
+      "description": "Bear leg of a move",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "bear_micro_channel": {
+      "description": "Micro channel in bear direction (very tight, few bars)",
+      "bar_count": "5-15",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "bear_trend_bar"
+      ],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "one_sided_score"
+      ],
+      "requires_swing_detection": false
+    },
+    "bear_reversal": {
+      "description": "Bearish reversal concept (reversal down)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "bear_trend_from_the_open": {
+      "description": "Bear trend starting from market open",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "breakout": {
+      "description": "Price breaks above resistance or below support",
+      "bar_count": "1-2",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "breakout_bar_up",
+        "breakout_bar_down"
+      ],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "breakout_failure_rate",
+        "breakout_strength",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "breakout_mode": {
+      "description": "Trading range state where price is coiling for breakout",
+      "bar_count": "10+",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "breakout_failure_rate",
+        "breakout_strength",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "breakout_pullback": {
+      "description": "First pullback after successful breakout",
+      "bar_count": "3-10",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "breakout_failure_rate",
+        "breakout_strength",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "breakout_test": {
+      "description": "Test of a breakout point",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "breakout_failure_rate",
+        "breakout_strength",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "broad_bear_channel": {
+      "description": "Wide/broad bear channel",
+      "bar_count": "variable (20+)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "broad_bull_channel": {
+      "description": "Wide/broad bull channel",
+      "bar_count": "variable (20+)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "bull_breakout": {
+      "description": "Bull breakout (breakout up)",
+      "bar_count": "1-2",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "breakout_bar_up",
+        "bar_type_bull"
+      ],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "breakout_failure_rate",
+        "breakout_strength",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "bull_channel": {
+      "description": "Bull channel (up-sloping channel) context",
+      "bar_count": "variable (15+)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "bull_flag": {
+      "description": "Pullback in bull trend forming flag shape",
+      "bar_count": "5-20",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "pullback_depth",
+        "pullback_bar_count",
+        "range_compression",
+        "two_sided_score"
+      ],
+      "requires_swing_detection": true
+    },
+    "bull_flag_around_moving_average_trap": {
+      "description": "Bull flag around MA that traps shorts before resuming up",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "bull_ledge": {
+      "description": "Bullish ledge: tight consolidation with repeated lows as support",
+      "bar_count": "3-10",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "bull_leg": {
+      "description": "Bull leg of a move",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "bull_micro_channel": {
+      "description": "Micro channel in bull direction (very tight, few bars)",
+      "bar_count": "5-15",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "bull_trend_bar"
+      ],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "one_sided_score"
+      ],
+      "requires_swing_detection": false
+    },
+    "bull_reversal": {
+      "description": "Bullish reversal concept (reversal up)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "bull_trend_from_the_open": {
+      "description": "Bull trend starting from market open",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "channel": {
+      "description": "Channel concept (sloping range with parallel trendlines)",
+      "bar_count": "variable (15+)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "channel_as_flag": {
+      "description": "A tight channel that functions as a flag within a larger trend",
+      "bar_count": "10-25",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "channel_bear": {
+      "description": "Bear channel (parallel trendlines, lower highs and lower lows)",
+      "bar_count": "variable (20+)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_high_count",
+        "swing_low_count",
+        "leg_count",
+        "ema_slope",
+        "one_sided_score"
+      ],
+      "requires_swing_detection": true
+    },
+    "channel_bull": {
+      "description": "Bull channel (parallel trendlines, higher highs and higher lows)",
+      "bar_count": "variable (20+)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_high_count",
+        "swing_low_count",
+        "leg_count",
+        "ema_slope",
+        "one_sided_score"
+      ],
+      "requires_swing_detection": true
+    },
+    "climactic_selloff": {
+      "description": "Climactic selling exhaustion",
+      "bar_count": "1-5",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "climax": {
+      "description": "Climax concept (climactic move / exhaustion)",
+      "bar_count": "1-5",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "acceleration",
+        "bar_range_atr",
+        "body_dominance",
+        "body_ratio",
+        "close_position",
+        "spike_strength"
+      ],
+      "requires_swing_detection": false
+    },
+    "continuation": {
+      "description": "Trend continuation signal",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "crowded_trade_reversal": {
+      "description": "Reversal driven by overcrowded positioning",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "deep_pullback": {
+      "description": "Pullback that retraces large portion of prior move (50%+)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "doji_day": {
+      "description": "Day with doji characteristics",
+      "bar_count": "session",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "double_bottom": {
+      "description": "Two swing lows at approximately same level",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_low_count",
+        "rel_low_vs_prior",
+        "ema_distance"
+      ],
+      "requires_swing_detection": true
+    },
+    "double_bottom_bull_flag": {
+      "description": "Bull flag with double bottom shape",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_low_count",
+        "pullback_depth",
+        "pullback_bar_count",
+        "rel_low_vs_prior"
+      ],
+      "requires_swing_detection": true
+    },
+    "double_top": {
+      "description": "Two swing highs at approximately same level",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_high_count",
+        "rel_high_vs_prior",
+        "ema_distance"
+      ],
+      "requires_swing_detection": true
+    },
+    "double_top_bear_flag": {
+      "description": "Bear flag with double top shape",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_high_count",
+        "pullback_depth",
+        "pullback_bar_count",
+        "rel_high_vs_prior"
+      ],
+      "requires_swing_detection": true
+    },
+    "dueling_trendlines": {
+      "description": "Price compresses between opposing trendlines",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "endless_pullback": {
+      "description": "Pullback that keeps extending beyond expectations",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "exhaustion": {
+      "description": "Exhaustion phase - trend losing momentum",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "expanding_triangle": {
+      "description": "Expanding triangle (highs getting higher, lows getting lower)",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_high_count",
+        "swing_low_count",
+        "bar_range_atr",
+        "rel_high_vs_prior",
+        "rel_low_vs_prior"
+      ],
+      "requires_swing_detection": true
+    },
+    "failed_breakout": {
+      "description": "Breakout that immediately reverses (trap)",
+      "bar_count": "2-3",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "breakout_bar_up",
+        "breakout_bar_down",
+        "reversal_bar"
+      ],
+      "atomic_signals": [
+        "breakout_failure_rate",
+        "breakout_strength",
+        "bar_range_atr",
+        "follow_through_bull",
+        "follow_through_bear"
+      ],
+      "requires_swing_detection": false
+    },
+    "final_flag": {
+      "description": "Last flag/pullback late in trend before exhaustion",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "follow_through": {
+      "description": "Confirmation price action after signal bar/breakout",
+      "bar_count": "1-3",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "gap_down": {
+      "description": "Downward gap opening",
+      "bar_count": "1",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position",
+        "gap_fill_percent",
+        "gap_size_atr"
+      ],
+      "requires_swing_detection": false
+    },
+    "gap_reversal": {
+      "description": "Reversal where gap fails and price reverses",
+      "bar_count": "1-5",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "gap_fill_percent",
+        "gap_size_atr",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": false
+    },
+    "gap_up": {
+      "description": "Upward gap opening",
+      "bar_count": "1",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position",
+        "gap_fill_percent",
+        "gap_size_atr"
+      ],
+      "requires_swing_detection": false
+    },
+    "head_and_shoulders_as_flag": {
+      "description": "H&S-shaped pullback that functions as continuation flag",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "head_and_shoulders_bottom": {
+      "description": "Head and shoulders bottom reversal (inverse H&S)",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "head_and_shoulders_top": {
+      "description": "Head and shoulders top reversal",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "high_1": {
+      "description": "First pullback in bull trend (High 1 entry)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "leg_count",
+        "pullback_depth",
+        "pullback_bar_count",
+        "follow_through_bull"
+      ],
+      "requires_swing_detection": true
+    },
+    "high_2": {
+      "description": "Second pullback in bull trend (High 2 entry)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "leg_count",
+        "pullback_depth",
+        "pullback_bar_count",
+        "follow_through_bull"
+      ],
+      "requires_swing_detection": true
+    },
+    "high_3": {
+      "description": "Third pullback entry (rarely taken)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "leg_count",
+        "pullback_depth",
+        "pullback_bar_count",
+        "follow_through_bull"
+      ],
+      "requires_swing_detection": true
+    },
+    "high_4": {
+      "description": "Fourth pullback in uptrend (High 4)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "higher_high": {
+      "description": "Higher high in structure",
+      "bar_count": "variable",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "higher_high_double_top": {
+      "description": "Double top with higher high variant",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "rel_high_vs_prior",
+        "rel_low_vs_prior",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "higher_high_major_trend_reversal": {
+      "description": "Major trend reversal at higher high",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "higher_low": {
+      "description": "Higher low (HL) structural concept",
+      "bar_count": "variable",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "higher_low_double_bottom": {
+      "description": "Double bottom with second low higher than first",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_low_count",
+        "rel_low_vs_prior",
+        "ema_distance",
+        "follow_through_bull"
+      ],
+      "requires_swing_detection": true
+    },
+    "higher_low_major_trend_reversal": {
+      "description": "Major trend reversal at higher low",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "ii": {
+      "description": "Two consecutive inside bars",
+      "bar_count": "2",
+      "subjectivity": "low",
+      "required_tag_signals": [
+        "inside_bar"
+      ],
+      "atomic_signals": [
+        "overlap_ratio",
+        "range_compression",
+        "body_ratio"
+      ],
+      "requires_swing_detection": false
+    },
+    "iii": {
+      "description": "Three consecutive inside bars",
+      "bar_count": "3",
+      "subjectivity": "low",
+      "required_tag_signals": [
+        "inside_bar"
+      ],
+      "atomic_signals": [
+        "overlap_ratio",
+        "range_compression",
+        "body_ratio"
+      ],
+      "requires_swing_detection": false
+    },
+    "inside_outside_inside": {
+      "description": "Inside-Outside-Inside (IOI) pattern",
+      "bar_count": "3",
+      "subjectivity": "low",
+      "required_tag_signals": [
+        "inside_bar",
+        "outside_bar"
+      ],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "ioi": {
+      "description": "Inside-Outside-Inside pattern",
+      "bar_count": "3",
+      "subjectivity": "low",
+      "required_tag_signals": [
+        "inside_bar",
+        "outside_bar"
+      ],
+      "atomic_signals": [
+        "overlap_ratio",
+        "range_compression",
+        "body_ratio",
+        "bar_range_atr"
+      ],
+      "requires_swing_detection": false
+    },
+    "island_reversal": {
+      "description": "Reversal with gap away then gap back leaving isolated bars",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": false
+    },
+    "ledge_pattern": {
+      "description": "Tight sideways pause/step that can act as continuation or reversal",
+      "bar_count": "3-10",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "low_1": {
+      "description": "First pullback in bear trend (Low 1 entry)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "leg_count",
+        "pullback_depth",
+        "pullback_bar_count",
+        "follow_through_bear"
+      ],
+      "requires_swing_detection": true
+    },
+    "low_2": {
+      "description": "Second pullback in bear trend (Low 2 entry)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "leg_count",
+        "pullback_depth",
+        "pullback_bar_count",
+        "follow_through_bear"
+      ],
+      "requires_swing_detection": true
+    },
+    "low_3": {
+      "description": "Third pullback entry (rarely taken)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "leg_count",
+        "pullback_depth",
+        "pullback_bar_count",
+        "follow_through_bear"
+      ],
+      "requires_swing_detection": true
+    },
+    "low_4": {
+      "description": "Fourth pullback in downtrend (Low 4)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "lower_high": {
+      "description": "Lower high (LH) structural concept",
+      "bar_count": "variable",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "lower_high_double_top": {
+      "description": "Double top with second high lower than first",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_high_count",
+        "rel_high_vs_prior",
+        "ema_distance",
+        "follow_through_bear"
+      ],
+      "requires_swing_detection": true
+    },
+    "lower_high_major_trend_reversal": {
+      "description": "Major trend reversal at lower high",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "lower_low": {
+      "description": "Lower low in structure",
+      "bar_count": "variable",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "lower_low_double_bottom": {
+      "description": "Double bottom with lower low variant",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "rel_high_vs_prior",
+        "rel_low_vs_prior",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "lower_low_major_trend_reversal": {
+      "description": "Major trend reversal at lower low",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "major_bear_surprise": {
+      "description": "Major surprise bar in bear direction",
+      "bar_count": "1",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "bear_surprise_bar"
+      ],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "major_bull_surprise": {
+      "description": "Major surprise bar in bull direction",
+      "bar_count": "1",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "bull_surprise_bar"
+      ],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "major_trend_reversal": {
+      "description": "Significant reversal of prior trend (MTR)",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "measured_move": {
+      "description": "Price projection based on prior swing or range height",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "mm_distance_atr",
+        "mm_percent_complete",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "measured_move_bear": {
+      "description": "Bear measured move (AB=CD down)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "mm_distance_atr",
+        "mm_percent_complete",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "measured_move_bull": {
+      "description": "Bull measured move (AB=CD up)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "mm_distance_atr",
+        "mm_percent_complete",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "micro_channel": {
+      "description": "Tight sequence of small trend bars with little/no pullback",
+      "bar_count": "5-15",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "one_sided_score"
+      ],
+      "requires_swing_detection": false
+    },
+    "micro_double_bottom": {
+      "description": "Small double bottom within 10 bars",
+      "bar_count": "3-10",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_low_count",
+        "rel_low_vs_prior",
+        "range_compression"
+      ],
+      "requires_swing_detection": true
+    },
+    "micro_double_top": {
+      "description": "Small double top within 10 bars",
+      "bar_count": "3-10",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_high_count",
+        "rel_high_vs_prior",
+        "range_compression"
+      ],
+      "requires_swing_detection": true
+    },
+    "micro_trend_line": {
+      "description": "Short-term trendline over few bars",
+      "bar_count": "3-10",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance"
+      ],
+      "requires_swing_detection": false
+    },
+    "micro_wedge": {
+      "description": "Small wedge pattern (3 pushes) on lower timeframe",
+      "bar_count": "5-15",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "minor_reversal": {
+      "description": "Minor reversal (not major trend change)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "minor_wedge": {
+      "description": "Small/minor wedge pattern",
+      "bar_count": "5-20",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "neckline": {
+      "description": "Head and shoulders neckline",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "nested_wedge": {
+      "description": "Wedge within a wedge pattern",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "oo": {
+      "description": "Two consecutive outside bars",
+      "bar_count": "2",
+      "subjectivity": "low",
+      "required_tag_signals": [
+        "outside_bar"
+      ],
+      "atomic_signals": [
+        "overlap_ratio",
+        "bar_range_atr",
+        "body_ratio"
+      ],
+      "requires_swing_detection": false
+    },
+    "opening_reversal": {
+      "description": "Reversal occurring near session open after initial drive",
+      "bar_count": "3-10",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "outside_down_day": {
+      "description": "Outside day closing down",
+      "bar_count": "1",
+      "subjectivity": "low",
+      "required_tag_signals": [
+        "outside_bar",
+        "bar_type_bear"
+      ],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "outside_up_day": {
+      "description": "Outside day closing up",
+      "bar_count": "1",
+      "subjectivity": "low",
+      "required_tag_signals": [
+        "outside_bar",
+        "bar_type_bull"
+      ],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "parabolic_wedge": {
+      "description": "Accelerating wedge with climactic move",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "parabolic_wedge_bottom": {
+      "description": "Parabolic wedge bottom pattern",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "parabolic_wedge_top": {
+      "description": "Parabolic wedge top pattern",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "pullback": {
+      "description": "Pullback concept (countertrend move within larger trend)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "pullback_entry": {
+      "description": "Entry on pullback within existing trend",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "reversal": {
+      "description": "Reversal concept (direction change / reversal attempt)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "reversal_down": {
+      "description": "Downward reversal / bear reversal",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "reversal_up": {
+      "description": "Upward reversal / bull reversal",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": true
+    },
+    "second_entry_long": {
+      "description": "Second attempt long entry after first pullback",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "second_entry_short": {
+      "description": "Second attempt short entry after first pullback",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "second_leg_down": {
+      "description": "Second leg down (follow-on leg lower)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "second_leg_trap": {
+      "description": "Trap on second leg",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "second_leg_up": {
+      "description": "Second leg of rally",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "shallow_pullback": {
+      "description": "Shallow pullback that retraces small portion of prior move",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "small_pullback_bear_trend": {
+      "description": "Bear trend with small pullbacks",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "small_pullback_bull_trend": {
+      "description": "Bull trend with small pullbacks (SPBT)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "spike": {
+      "description": "Spike move (sudden strong breakout)",
+      "bar_count": "1-5",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "bull_trend_bar",
+        "bear_trend_bar"
+      ],
+      "atomic_signals": [
+        "acceleration",
+        "bar_range_atr",
+        "body_dominance",
+        "body_ratio",
+        "close_position",
+        "spike_strength"
+      ],
+      "requires_swing_detection": false
+    },
+    "spike_and_channel": {
+      "description": "Trend structure with initial spike followed by orderly channel",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "acceleration",
+        "bar_range_atr",
+        "body_dominance",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "spike_strength",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "spike_and_channel_bear": {
+      "description": "Initial bear spike followed by bear channel phase",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [
+        "bear_trend_bar"
+      ],
+      "atomic_signals": [
+        "consecutive_bear_count",
+        "body_dominance",
+        "spike_strength",
+        "acceleration",
+        "leg_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "spike_and_channel_bull": {
+      "description": "Initial bull spike followed by bull channel phase",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [
+        "bull_trend_bar"
+      ],
+      "atomic_signals": [
+        "consecutive_bull_count",
+        "body_dominance",
+        "spike_strength",
+        "acceleration",
+        "leg_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "spike_bear": {
+      "description": "Bear spike (strong downward move)",
+      "bar_count": "1-5",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "bear_trend_bar"
+      ],
+      "atomic_signals": [
+        "acceleration",
+        "bar_range_atr",
+        "body_dominance",
+        "body_ratio",
+        "close_position",
+        "spike_strength"
+      ],
+      "requires_swing_detection": false
+    },
+    "spike_bull": {
+      "description": "Bull spike (strong upward move)",
+      "bar_count": "1-5",
+      "subjectivity": "medium",
+      "required_tag_signals": [
+        "bull_trend_bar"
+      ],
+      "atomic_signals": [
+        "acceleration",
+        "bar_range_atr",
+        "body_dominance",
+        "body_ratio",
+        "close_position",
+        "spike_strength"
+      ],
+      "requires_swing_detection": false
+    },
+    "stair_step_trend": {
+      "description": "Trend that advances in steps: impulse legs followed by consolidations",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "stop_run": {
+      "description": "Move designed to trigger clustered stops",
+      "bar_count": "1-3",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "test_of_ema": {
+      "description": "Test of moving average",
+      "bar_count": "1-3",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "test_of_high": {
+      "description": "Test of prior high",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "test_of_low": {
+      "description": "Test of prior low",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "test_of_open": {
+      "description": "Test of day's open price",
+      "bar_count": "variable",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position"
+      ],
+      "requires_swing_detection": false
+    },
+    "three_bar_reversal_bear": {
+      "description": "Three-bar bear reversal pattern",
+      "bar_count": "3",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "close_position",
+        "body_ratio",
+        "rel_high_vs_prior",
+        "follow_through_bear"
+      ],
+      "requires_swing_detection": false
+    },
+    "three_bar_reversal_bull": {
+      "description": "Three-bar bull reversal pattern",
+      "bar_count": "3",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "close_position",
+        "body_ratio",
+        "rel_low_vs_prior",
+        "follow_through_bull"
+      ],
+      "requires_swing_detection": false
+    },
+    "three_push_pullback": {
+      "description": "Pullback that unfolds in three pushes (wedge-like correction)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "tight_bear_channel": {
+      "description": "Tight bear channel (strong trend with minimal pullbacks)",
+      "bar_count": "variable (10+)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "tight_bull_channel": {
+      "description": "Tight bull channel (strong trend with minimal pullbacks)",
+      "bar_count": "variable (10+)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trading_range": {
+      "description": "Sideways price action with defined support/resistance",
+      "bar_count": "variable (10+)",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "overlap_ratio",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count",
+        "two_sided_score"
+      ],
+      "requires_swing_detection": true
+    },
+    "trap_trading": {
+      "description": "Trading setups that exploit trapped traders",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trapped_bears": {
+      "description": "Trapped bears (shorts who sold and are trapped)",
+      "bar_count": "2-5",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trapped_bulls": {
+      "description": "Trapped bulls (bulls who bought and are trapped)",
+      "bar_count": "2-5",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trend": {
+      "description": "Trend concept (directional price movement)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trend_channel_line_overshoot": {
+      "description": "Price overshooting trend channel line",
+      "bar_count": "1-3",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trend_channel_line_undershoot": {
+      "description": "Price briefly breaks past channel line before reversing",
+      "bar_count": "1-3",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "ema_slope",
+        "leg_count",
+        "one_sided_score",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trend_from_the_open": {
+      "description": "Intraday session that trends strongly from the open",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trend_line": {
+      "description": "Trend line / trendline concept",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trend_resumption": {
+      "description": "Trend resuming after consolidation",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trend_weakening_sequence": {
+      "description": "Sequence showing loss of trend strength",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "trending_range": {
+      "description": "Trading range with directional drift",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "overlap_ratio",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count",
+        "two_sided_score"
+      ],
+      "requires_swing_detection": true
+    },
+    "trending_trading_range_bear": {
+      "description": "Bear-biased trading range that trends downward overall",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "overlap_ratio",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count",
+        "two_sided_score"
+      ],
+      "requires_swing_detection": true
+    },
+    "trending_trading_range_bull": {
+      "description": "Bull-biased trading range that trends upward overall",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "overlap_ratio",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count",
+        "two_sided_score"
+      ],
+      "requires_swing_detection": true
+    },
+    "trending_trading_range_day": {
+      "description": "Day with trending trading range character",
+      "bar_count": "session",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "overlap_ratio",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count",
+        "two_sided_score"
+      ],
+      "requires_swing_detection": true
+    },
+    "trendline_break_retest": {
+      "description": "Trendline break followed by pullback/retest",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "consecutive_bear_count",
+        "consecutive_bull_count",
+        "ema_distance",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "triangle": {
+      "description": "Converging triangle (highs getting lower, lows getting higher)",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "swing_high_count",
+        "swing_low_count",
+        "range_compression",
+        "rel_high_vs_prior",
+        "rel_low_vs_prior"
+      ],
+      "requires_swing_detection": true
+    },
+    "triangle_breakout_mode": {
+      "description": "Triangle compression poised for breakout",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "breakout_failure_rate",
+        "breakout_strength",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "triangle_pattern": {
+      "description": "Triangle consolidation pattern (symmetrical/ascending/descending)",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "truncated_wedge": {
+      "description": "Wedge with fewer than 3 legs (truncated)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "twenty_gap_bars": {
+      "description": "Trend where bars don't touch MA for 20+ bars",
+      "bar_count": "20+",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position",
+        "gap_fill_percent",
+        "gap_size_atr"
+      ],
+      "requires_swing_detection": false
+    },
+    "two_bar_reversal": {
+      "description": "Reversal pattern formed by two consecutive bars",
+      "bar_count": "2",
+      "subjectivity": "low",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "body_ratio",
+        "close_position",
+        "follow_through_bear",
+        "follow_through_bull",
+        "tail_asymmetry"
+      ],
+      "requires_swing_detection": false
+    },
+    "two_bar_reversal_bear": {
+      "description": "Two-bar bear reversal (bull bar followed by bear bar that closes below)",
+      "bar_count": "2",
+      "subjectivity": "low",
+      "required_tag_signals": [
+        "bar_type_bull",
+        "bar_type_bear"
+      ],
+      "atomic_signals": [
+        "close_position",
+        "body_ratio",
+        "tail_asymmetry",
+        "bar_range_atr"
+      ],
+      "requires_swing_detection": false
+    },
+    "two_bar_reversal_bull": {
+      "description": "Two-bar bull reversal (bear bar followed by bull bar that closes above)",
+      "bar_count": "2",
+      "subjectivity": "low",
+      "required_tag_signals": [
+        "bar_type_bull",
+        "bar_type_bear"
+      ],
+      "atomic_signals": [
+        "close_position",
+        "body_ratio",
+        "tail_asymmetry",
+        "bar_range_atr"
+      ],
+      "requires_swing_detection": false
+    },
+    "two_legged_pullback": {
+      "description": "Pullback that unfolds in two legs against the trend",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "pullback_bar_count",
+        "pullback_depth",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "two_legs": {
+      "description": "Two legs / two-push concept (generic two-legged structure)",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "wedge": {
+      "description": "Wedge concept (3 pushes / converging swings)",
+      "bar_count": "variable",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "wedge_bear": {
+      "description": "Rising wedge / wedge top (3 pushes up with converging trendlines)",
+      "bar_count": "variable (10-30)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "push_count",
+        "swing_high_count",
+        "swing_low_count",
+        "leg_count",
+        "pullback_depth"
+      ],
+      "requires_swing_detection": true
+    },
+    "wedge_bear_flag": {
+      "description": "Bear flag shaped as rising wedge",
+      "bar_count": "10-30",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "push_count",
+        "pullback_depth",
+        "pullback_bar_count",
+        "range_compression",
+        "swing_high_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "wedge_bottom": {
+      "description": "Three-push wedge pattern at bottom (falling wedge)",
+      "bar_count": "variable (10-30)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "wedge_bull": {
+      "description": "Falling wedge / wedge bottom (3 pushes down with converging trendlines)",
+      "bar_count": "variable (10-30)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "push_count",
+        "swing_low_count",
+        "swing_high_count",
+        "leg_count",
+        "pullback_depth"
+      ],
+      "requires_swing_detection": true
+    },
+    "wedge_bull_flag": {
+      "description": "Bull flag shaped as falling wedge",
+      "bar_count": "10-30",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "push_count",
+        "pullback_depth",
+        "pullback_bar_count",
+        "range_compression",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "wedge_rally": {
+      "description": "Rally forming a wedge shape",
+      "bar_count": "variable",
+      "subjectivity": "medium",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    },
+    "wedge_top": {
+      "description": "Three-push wedge pattern at top (rising wedge)",
+      "bar_count": "variable (10-30)",
+      "subjectivity": "high",
+      "required_tag_signals": [],
+      "atomic_signals": [
+        "bar_range_atr",
+        "body_ratio",
+        "close_position",
+        "leg_count",
+        "push_count",
+        "range_compression",
+        "swing_high_count",
+        "swing_low_count"
+      ],
+      "requires_swing_detection": true
+    }
+  },
+  "summary": {
+    "total_patterns": 168,
+    "by_subjectivity": {
+      "low": 23,
+      "medium": 88,
+      "high": 57
+    },
+    "patterns_requiring_swings": 130,
+    "unique_tag_signals_referenced": [
+      "bar_type_bear",
+      "bar_type_bull",
+      "bar_type_doji",
+      "bear_surprise_bar",
+      "bear_trend_bar",
+      "breakout_bar_down",
+      "breakout_bar_up",
+      "bull_surprise_bar",
+      "bull_trend_bar",
+      "inside_bar",
+      "outside_bar",
+      "reversal_bar"
+    ],
+    "unique_atomic_signals_referenced": [
+      "acceleration",
+      "bar_range_atr",
+      "body_dominance",
+      "body_ratio",
+      "breakout_failure_rate",
+      "breakout_strength",
+      "close_position",
+      "consecutive_bear_count",
+      "consecutive_bull_count",
+      "ema_distance",
+      "ema_slope",
+      "follow_through_bear",
+      "follow_through_bull",
+      "gap_fill_percent",
+      "gap_size_atr",
+      "leg_count",
+      "mm_distance_atr",
+      "mm_percent_complete",
+      "one_sided_score",
+      "overlap_ratio",
+      "pullback_bar_count",
+      "pullback_depth",
+      "push_count",
+      "range_compression",
+      "rel_high_vs_prior",
+      "rel_low_vs_prior",
+      "spike_strength",
+      "swing_high_count",
+      "swing_low_count",
+      "tail_asymmetry",
+      "two_sided_score"
+    ]
+  }
+}
